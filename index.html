@@ -1,0 +1,2002 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GRANUE | Barra Nutritiva Andina de 120 g · 0 Octógonos</title>
+  <!-- Google Fonts: Fraunces (Editorial Display) & Plus Jakarta Sans (Clean Modern UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#FBF8F3',
+            creamWarm: '#F5EFE6',
+            creamBorder: '#E7DDD0',
+            cacao: '#24130C',
+            cacaoSoft: '#593E31',
+            quinoa: '#E07A16',
+            quinoaDark: '#B85D08',
+            quinoaLight: '#FEF3C7',
+            camote: '#C84B31',
+            camoteLight: '#FDECE8',
+            andean: '#1B7A43',
+            andeanDark: '#135930',
+            andeanLight: '#DCFCE7',
+            yape: '#742284',
+            plin: '#00A8B5',
+          },
+          fontFamily: {
+            serif: ['Fraunces', 'Georgia', 'serif'],
+            sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            'warm-lg': '0 20px 45px -15px rgba(36, 19, 12, 0.14)',
+            'warm-md': '0 10px 25px -8px rgba(36, 19, 12, 0.09)',
+            'glow-quinoa': '0 12px 30px -6px rgba(224, 122, 22, 0.35)',
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body {
+      background-color: #FBF8F3;
+      color: #24130C;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    h1, h2, h3, .font-display {
+      font-family: 'Fraunces', Georgia, serif;
+    }
+    .dot-texture {
+      background-image: radial-gradient(rgba(36, 19, 12, 0.05) 1px, transparent 0);
+      background-size: 22px 22px;
+    }
+    /* Efecto 3D Tilt para tarjetas de producto */
+    .tilt-card {
+      transform-style: preserve-3d;
+      transition: transform 0.22s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.25s ease;
+    }
+    .tilt-card:hover {
+      box-shadow: 0 24px 48px -12px rgba(36, 19, 12, 0.18);
+    }
+    /* Animación flotante suave para badges del Hero */
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-7px); }
+    }
+    .animate-float {
+      animation: floatSlow 4.2s ease-in-out infinite;
+    }
+    .animate-float-delayed {
+      animation: floatSlow 4.8s ease-in-out 1.4s infinite;
+    }
+    /* Animación de sello Club Granue */
+    @keyframes stampPop {
+      0% { transform: scale(0.6) rotate(-12deg); opacity: 0.4; }
+      70% { transform: scale(1.12) rotate(4deg); }
+      100% { transform: scale(1) rotate(0deg); opacity: 1; }
+    }
+    .stamp-punched {
+      animation: stampPop 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    }
+    /* Scrollbar limpio */
+    ::-webkit-scrollbar { width: 7px; height: 7px; }
+    ::-webkit-scrollbar-track { background: #F5EFE6; }
+    ::-webkit-scrollbar-thumb { background: #C7B6A2; border-radius: 9999px; }
+  </style>
+</head>
+<body class="antialiased selection:bg-quinoa selection:text-white overflow-x-hidden">
+
+  <!-- ===================================================================== -->
+  <!-- 1. NAVBAR COMERCIAL FLOTANTE                                          -->
+  <!-- ===================================================================== -->
+  <header class="fixed top-0 left-0 right-0 z-50 px-3 sm:px-6 pt-3">
+    <div class="max-w-7xl mx-auto bg-cream/90 backdrop-blur-md border border-creamBorder rounded-2xl shadow-warm-md px-4 sm:px-6 h-16 md:h-[72px] flex items-center justify-between">
+      <!-- Logo GRANUE con emblema de espiga andina -->
+      <a href="#inicio" class="flex items-center gap-2.5 group">
+        <div class="w-10 h-10 rounded-xl bg-cacao text-cream flex items-center justify-center group-hover:bg-quinoa transition-colors shadow-sm">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 2v20M12 6c-2.8-2.2-6.5-1.5-6.5 1.8S9.2 10.5 12 9.5M12 6c2.8-2.2 6.5-1.5 6.5 1.8S14.8 10.5 12 9.5M12 12.5c-2.8-2.2-6.5-1.5-6.5 1.8s3.7 2.7 6.5 1.7M12 12.5c2.8-2.2 6.5-1.5 6.5 1.8s-3.7 2.7-6.5 1.7" />
+          </svg>
+        </div>
+        <div>
+          <span class="font-display font-extrabold text-xl sm:text-2xl tracking-tight text-cacao block leading-none">GRANUE</span>
+          <span class="text-[10px] font-bold uppercase tracking-widest text-quinoa block mt-0.5">Andean Fuel · 120 g</span>
+        </div>
+      </a>
+
+      <!-- Enlaces rápidos Desktop -->
+      <nav class="hidden lg:flex items-center gap-1 xl:gap-2">
+        <a href="#sabores" class="px-3 py-2 rounded-xl text-sm font-semibold text-cacaoSoft hover:text-cacao hover:bg-creamWarm transition">Sabores</a>
+        <a href="#ingredientes" class="px-3 py-2 rounded-xl text-sm font-semibold text-cacaoSoft hover:text-cacao hover:bg-creamWarm transition">Ingredientes</a>
+        <a href="#octogonos" class="px-3 py-2 rounded-xl text-sm font-semibold text-andean hover:bg-andeanLight/60 transition flex items-center gap-1.5">
+          <span class="w-2 h-2 rounded-full bg-andean"></span>0 Octógonos
+        </a>
+        <a href="#packs" class="px-3 py-2 rounded-xl text-sm font-semibold text-cacaoSoft hover:text-cacao hover:bg-creamWarm transition">Packs y Precios</a>
+        <a href="#ubicacion" class="px-3 py-2 rounded-xl text-sm font-semibold text-cacaoSoft hover:text-cacao hover:bg-creamWarm transition">Dónde Encontrarnos</a>
+      </nav>
+
+      <!-- Acciones: Muestra Gratis + Carrito + Menú Móvil -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <a href="#comunidad" class="hidden sm:inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-quinoaLight text-quinoaDark hover:bg-quinoa hover:text-white font-bold text-xs sm:text-sm transition">
+          <span>Muestra Gratis</span>
+        </a>
+
+        <!-- Botón Carrito de Compras -->
+        <button id="open-cart-btn" type="button" aria-label="Abrir carrito de compras" class="relative inline-flex items-center gap-2 px-3.5 sm:px-4 py-2.5 rounded-xl bg-cacao text-cream hover:bg-quinoaDark font-bold text-sm transition shadow-sm cursor-pointer">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+          </svg>
+          <span class="hidden md:inline">Mi Pedido</span>
+          <span id="cart-badge" class="min-w-[22px] h-[22px] px-1.5 rounded-full bg-quinoa text-white text-xs font-extrabold flex items-center justify-center">
+            2
+          </span>
+        </button>
+
+        <!-- Hamburguesa Móvil -->
+        <button id="mobile-menu-btn" type="button" aria-label="Abrir navegación" class="lg:hidden p-2.5 rounded-xl border border-creamBorder bg-white text-cacao hover:bg-creamWarm transition">
+          <svg id="icon-open" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg id="icon-close" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Drawer Navegación Móvil -->
+    <div id="mobile-menu" class="hidden lg:hidden max-w-7xl mx-auto mt-2 bg-cream border border-creamBorder rounded-2xl shadow-warm-lg p-4 space-y-1">
+      <a href="#sabores" class="mobile-link block px-4 py-3 rounded-xl font-semibold text-cacao hover:bg-creamWarm">Sabores Granue</a>
+      <a href="#ingredientes" class="mobile-link block px-4 py-3 rounded-xl font-semibold text-cacao hover:bg-creamWarm">Ingredientes Peruanos (120 g)</a>
+      <a href="#octogonos" class="mobile-link block px-4 py-3 rounded-xl font-semibold text-andean hover:bg-andeanLight/50">Sello 0 Octógonos (Ley 30021)</a>
+      <a href="#packs" class="mobile-link block px-4 py-3 rounded-xl font-semibold text-cacao hover:bg-creamWarm">Packs, Precios y Ahorro</a>
+      <a href="#ubicacion" class="mobile-link block px-4 py-3 rounded-xl font-semibold text-cacao hover:bg-creamWarm">Dónde Encontrarnos</a>
+      <a href="#comunidad" class="mobile-link block px-4 py-3 rounded-xl font-bold text-quinoaDark bg-quinoaLight">Pide tu Muestra Gratis (30 g)</a>
+    </div>
+  </header>
+
+  <!-- ===================================================================== -->
+  <!-- 2. HERO SECTION DE ALTO IMPACTO (CONVERSIÓN Y ANTOJO)                 -->
+  <!-- ===================================================================== -->
+  <section id="inicio" class="pt-28 pb-16 md:pt-36 md:pb-24 dot-texture relative overflow-hidden">
+    <!-- Círculos decorativos cálidos de fondo -->
+    <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-quinoa/10 blur-3xl pointer-events-none"></div>
+    <div class="absolute top-1/2 -left-32 w-80 h-80 rounded-full bg-camote/10 blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        <!-- Columna Izquierda: Propuesta Persuasiva -->
+        <div class="lg:col-span-6 space-y-6">
+          <!-- Badge Superior -->
+          <div class="inline-flex flex-wrap items-center gap-2 px-4 py-2 rounded-full bg-white border border-creamBorder shadow-sm">
+            <span class="px-2 py-0.5 rounded-full bg-andean text-white text-[11px] font-extrabold uppercase tracking-wide">0 Octógonos</span>
+            <span class="text-xs sm:text-sm font-bold text-cacao">120 g de Saciedad Real · 480 kcal</span>
+          </div>
+
+          <!-- Titular Principal -->
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-cacao tracking-tight leading-[1.08]">
+            Come bien, <span class="text-quinoa italic font-bold">aunque no tengas tiempo.</span>
+          </h1>
+
+          <!-- Subtítulo Persuasivo -->
+          <p class="text-base sm:text-lg text-cacaoSoft leading-relaxed">
+            La barra nutritiva peruana con <strong class="text-cacao">quinua, kiwicha, cacao y camote</strong> diseñada para sobrevivir a tus clases, laboratorios y parciales en Lima sin gastar de más. <span class="underline decoration-quinoa decoration-2 underline-offset-4 font-semibold text-cacao">Opción alternativa a una comida.</span>
+          </p>
+
+          <!-- Dos CTAs Principales -->
+          <div class="flex flex-col sm:flex-row gap-3.5 pt-1">
+            <a href="#packs" class="inline-flex items-center justify-center gap-2.5 px-6 py-4 rounded-2xl bg-cacao text-cream hover:bg-quinoaDark font-bold text-base transition shadow-warm-lg">
+              <span>Armar mi Pack desde S/ 5.90/barra</span>
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </a>
+            <a href="#comunidad" class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl bg-white border-2 border-quinoa text-quinoaDark hover:bg-quinoaLight font-bold text-base transition">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+              </svg>
+              <span>Pedir Muestra Gratis (30 g)</span>
+            </a>
+          </div>
+
+          <!-- Prueba Social y Pagos Digitales -->
+          <div class="pt-3 flex flex-wrap items-center gap-4 text-xs sm:text-sm text-cacaoSoft">
+            <div class="flex items-center gap-1.5 font-semibold text-cacao">
+              <span class="text-quinoa text-base">★★★★★</span>
+              <span>Validado por universitarios de Lima</span>
+            </div>
+            <span class="hidden sm:inline text-creamBorder">|</span>
+            <div class="flex items-center gap-2">
+              <span class="px-2.5 py-1 rounded-lg bg-yape/10 text-yape font-extrabold text-xs">Yape</span>
+              <span class="px-2.5 py-1 rounded-lg bg-plin/15 text-teal-800 font-extrabold text-xs">Plin</span>
+              <span class="text-xs">Pago al toque en campus</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Escena Heroica Interactiva de Producto -->
+        <div class="lg:col-span-6">
+          <div class="relative bg-gradient-to-br from-creamWarm via-white to-quinoaLight/40 rounded-[2.2rem] p-5 sm:p-8 border border-creamBorder shadow-warm-lg">
+            <!-- Selector Rápido de Sabor en Hero -->
+            <div class="flex items-center justify-between gap-2 mb-4 relative z-20">
+              <span class="text-xs font-extrabold uppercase tracking-wider text-cacaoSoft">Vista Previa Interactiva:</span>
+              <div class="inline-flex p-1 rounded-xl bg-cream border border-creamBorder shadow-sm">
+                <button type="button" data-hero-flavor="cacao" class="hero-flavor-btn px-3.5 py-1.5 rounded-lg text-xs font-bold bg-cacao text-cream transition cursor-pointer">
+                  Cacao & Maní
+                </button>
+                <button type="button" data-hero-flavor="camote" class="hero-flavor-btn px-3.5 py-1.5 rounded-lg text-xs font-bold text-cacaoSoft hover:text-cacao transition cursor-pointer">
+                  Canela & Camote
+                </button>
+              </div>
+            </div>
+
+            <!-- Escenario Visual de Empaque + Barra Cortada Ultra Detallada -->
+            <div id="hero-visual-stage" class="relative my-2 flex items-center justify-center min-h-[320px] sm:min-h-[360px]">
+              <!-- Renderizado dinámico por JS con SVG editorial de alta resolución -->
+            </div>
+
+            <!-- Badges Flotantes Persuasivos -->
+            <div class="animate-float hidden sm:flex items-center gap-2.5 px-4 py-2.5 rounded-2xl bg-white/95 backdrop-blur border border-creamBorder shadow-warm-md absolute top-20 -left-5 z-20">
+              <span class="w-8 h-8 rounded-xl bg-quinoaLight text-quinoaDark font-extrabold text-xs flex items-center justify-center">3x</span>
+              <div class="text-xs">
+                <strong class="text-cacao block">3x más grande</strong>
+                <span class="text-cacaoSoft">que una barra común (120 g)</span>
+              </div>
+            </div>
+
+            <div class="animate-float-delayed hidden sm:flex items-center gap-2.5 px-4 py-2.5 rounded-2xl bg-cacao text-cream shadow-warm-md absolute bottom-24 -right-4 z-20">
+              <span class="w-8 h-8 rounded-xl bg-andean text-white font-extrabold text-xs flex items-center justify-center">480</span>
+              <div class="text-xs">
+                <strong class="text-white block">480 kcal limpias</strong>
+                <span class="text-cream/75">Energía real entre clases</span>
+              </div>
+            </div>
+
+            <!-- Barra Inferior Rápida de Compra en Hero -->
+            <div class="mt-4 pt-4 border-t border-creamBorder flex flex-wrap items-center justify-between gap-3 relative z-20">
+              <div>
+                <span id="hero-flavor-title" class="font-display font-bold text-lg text-cacao block">Granue Cacao con Maní (120 g)</span>
+                <span class="text-xs text-cacaoSoft">Precio unitario con IGV: <strong class="text-cacao text-sm">S/ 7.50</strong> · O desde <strong class="text-andean">S/ 5.90</strong> en suscripción</span>
+              </div>
+              <button id="hero-quick-add" type="button" class="px-5 py-3 rounded-xl bg-quinoa hover:bg-quinoaDark text-white font-bold text-sm transition shadow-glow-quinoa cursor-pointer">
+                + Agregar al Carrito
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 3. GALERÍA INTERACTIVA DE SABORES Y VOTACIÓN DE COMUNIDAD              -->
+  <!-- ===================================================================== -->
+  <section id="sabores" class="py-16 md:py-24 border-t border-creamBorder bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
+      <!-- Encabezado -->
+      <div class="text-center max-w-3xl mx-auto space-y-3">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-quinoaLight text-quinoaDark text-xs font-extrabold uppercase tracking-wider">
+          Hechas con Superalimentos Peruanos
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-cacao">Dos Sabores Irresistibles para Tu Día a Día</h2>
+        <p class="text-base sm:text-lg text-cacaoSoft">
+          Horneadas artesanalmente en lotes frescos, sin sellos de advertencia y con la textura crocante y saciante que necesitas entre laboratorio y laboratorio.
+        </p>
+      </div>
+
+      <!-- Tarjetas Grandes y Apetitosas de los 2 Sabores -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
+        <!-- SABOR 1: CACAO CON MANÍ -->
+        <article class="tilt-card bg-cream rounded-[2rem] border border-creamBorder overflow-hidden flex flex-col justify-between">
+          <div>
+            <!-- Visual Superior Apetitoso (Foto Gastronómica + Respaldo SVG Editorial Garantizado) -->
+            <div class="relative h-64 sm:h-72 bg-gradient-to-br from-[#2C1810] via-[#432518] to-[#7A4424] overflow-hidden p-6 flex items-center justify-center">
+              <img
+                src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?auto=format&fit=crop&w=900&q=80"
+                alt="Barra Granue Cacao con Maní y granos andinos"
+                class="absolute inset-0 w-full h-full object-cover opacity-35 mix-blend-luminosity scale-105 transition-transform duration-500 hover:scale-110"
+                onerror="this.style.display='none'"
+              />
+              <!-- Arte Vectorial Detallado de la Barra Cacao con Maní -->
+              <div class="relative z-10 w-full max-w-[330px]" id="card-art-cacao"></div>
+
+              <!-- Badges Flotantes -->
+              <span class="absolute top-4 left-4 z-20 px-3 py-1 rounded-full bg-cacao/90 text-cream text-xs font-bold border border-white/15">
+                Favorito de Parciales
+              </span>
+              <span class="absolute top-4 right-4 z-20 px-3 py-1 rounded-full bg-andean text-white text-xs font-extrabold shadow">
+                0 OCTÓGONOS
+              </span>
+            </div>
+
+            <!-- Contenido y Perfil Sensorial -->
+            <div class="p-6 sm:p-8 space-y-5">
+              <div class="flex flex-wrap items-start justify-between gap-2">
+                <div>
+                  <h3 class="text-2xl sm:text-3xl font-extrabold text-cacao">Cacao con Maní</h3>
+                  <p class="text-xs font-bold uppercase tracking-wider text-quinoaDark mt-0.5">Intenso · Crocante · Energético</p>
+                </div>
+                <div class="text-right">
+                  <span class="text-2xl font-display font-extrabold text-cacao block">S/ 7.50</span>
+                  <span class="text-[11px] text-cacaoSoft">120 g · IGV incluido</span>
+                </div>
+              </div>
+
+              <p class="text-sm sm:text-base text-cacaoSoft leading-relaxed">
+                Cacao puro peruano en polvo combinado con trozos generosos de <strong class="text-cacao">maní tostado crocante</strong>, quinua y kiwicha expandidas, avena en hojuelas y harina de lenteja. Sabor profundo sin empalagar.
+              </p>
+
+              <!-- Barras de Perfil Sensorial -->
+              <div class="grid grid-cols-3 gap-3 p-4 rounded-2xl bg-white border border-creamBorder text-xs">
+                <div>
+                  <div class="flex justify-between font-bold text-cacao mb-1"><span>Crocancia</span><span>95%</span></div>
+                  <div class="h-2 bg-creamWarm rounded-full overflow-hidden"><div class="h-full bg-quinoa rounded-full" style="width: 95%;"></div></div>
+                </div>
+                <div>
+                  <div class="flex justify-between font-bold text-cacao mb-1"><span>Dulzor</span><span>60%</span></div>
+                  <div class="h-2 bg-creamWarm rounded-full overflow-hidden"><div class="h-full bg-cacao rounded-full" style="width: 60%;"></div></div>
+                </div>
+                <div>
+                  <div class="flex justify-between font-bold text-cacao mb-1"><span>Saciedad</span><span>100%</span></div>
+                  <div class="h-2 bg-creamWarm rounded-full overflow-hidden"><div class="h-full bg-andean rounded-full" style="width: 100%;"></div></div>
+                </div>
+              </div>
+
+              <!-- Macros por Barra de 120 g -->
+              <div class="grid grid-cols-4 gap-2 text-center">
+                <div class="p-2.5 rounded-xl bg-creamWarm">
+                  <span class="text-sm font-extrabold text-cacao block">480</span>
+                  <span class="text-[11px] text-cacaoSoft">kcal</span>
+                </div>
+                <div class="p-2.5 rounded-xl bg-creamWarm">
+                  <span class="text-sm font-extrabold text-cacao block">14.5 g</span>
+                  <span class="text-[11px] text-cacaoSoft">Proteína</span>
+                </div>
+                <div class="p-2.5 rounded-xl bg-creamWarm">
+                  <span class="text-sm font-extrabold text-cacao block">11.2 g</span>
+                  <span class="text-[11px] text-cacaoSoft">Fibra</span>
+                </div>
+                <div class="p-2.5 rounded-xl bg-andeanLight/70">
+                  <span class="text-sm font-extrabold text-andeanDark block">&lt; 10 g</span>
+                  <span class="text-[11px] text-andeanDark">Azúcar/100g</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botón Agregar al Carrito -->
+          <div class="px-6 sm:px-8 pb-6 sm:pb-8">
+            <button type="button" onclick="addToCart('unit-cacao')" class="w-full py-4 px-6 rounded-2xl bg-cacao hover:bg-quinoaDark text-cream font-bold text-base transition flex items-center justify-center gap-2 shadow-warm-md cursor-pointer">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M12 4v16m8-8H4" />
+              </svg>
+              <span>Agregar al carrito (S/ 7.50)</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- SABOR 2: CANELA CON CAMOTE -->
+        <article class="tilt-card bg-cream rounded-[2rem] border border-creamBorder overflow-hidden flex flex-col justify-between">
+          <div>
+            <!-- Visual Superior Apetitoso -->
+            <div class="relative h-64 sm:h-72 bg-gradient-to-br from-[#7C2D12] via-[#C84B31] to-[#E07A16] overflow-hidden p-6 flex items-center justify-center">
+              <img
+                src="https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?auto=format&fit=crop&w=900&q=80"
+                alt="Barra Granue Canela con Camote y avena horneada"
+                class="absolute inset-0 w-full h-full object-cover opacity-30 mix-blend-luminosity scale-105 transition-transform duration-500 hover:scale-110"
+                onerror="this.style.display='none'"
+              />
+              <!-- Arte Vectorial Detallado de la Barra Canela con Camote -->
+              <div class="relative z-10 w-full max-w-[330px]" id="card-art-camote"></div>
+
+              <!-- Badges Flotantes -->
+              <span class="absolute top-4 left-4 z-20 px-3 py-1 rounded-full bg-white/95 text-camote text-xs font-extrabold shadow">
+                Receta Andina Única
+              </span>
+              <span class="absolute top-4 right-4 z-20 px-3 py-1 rounded-full bg-andean text-white text-xs font-extrabold shadow">
+                0 OCTÓGONOS
+              </span>
+            </div>
+
+            <!-- Contenido y Perfil Sensorial -->
+            <div class="p-6 sm:p-8 space-y-5">
+              <div class="flex flex-wrap items-start justify-between gap-2">
+                <div>
+                  <h3 class="text-2xl sm:text-3xl font-extrabold text-cacao">Canela con Camote</h3>
+                  <p class="text-xs font-bold uppercase tracking-wider text-camote mt-0.5">Cálido · Dulzor Natural · Reconfortante</p>
+                </div>
+                <div class="text-right">
+                  <span class="text-2xl font-display font-extrabold text-cacao block">S/ 7.50</span>
+                  <span class="text-[11px] text-cacaoSoft">120 g · IGV incluido</span>
+                </div>
+              </div>
+
+              <p class="text-sm sm:text-base text-cacaoSoft leading-relaxed">
+                Puré artesanal de <strong class="text-cacao">camote peruano horneado</strong> con canela aromática, hojuelas de avena dorada, quinua expandida y semillas de chía. Dulzor suave y natural con toque de stevia.
+              </p>
+
+              <!-- Barras de Perfil Sensorial -->
+              <div class="grid grid-cols-3 gap-3 p-4 rounded-2xl bg-white border border-creamBorder text-xs">
+                <div>
+                  <div class="flex justify-between font-bold text-cacao mb-1"><span>Crocancia</span><span>82%</span></div>
+                  <div class="h-2 bg-creamWarm rounded-full overflow-hidden"><div class="h-full bg-quinoa rounded-full" style="width: 82%;"></div></div>
+                </div>
+                <div>
+                  <div class="flex justify-between font-bold text-cacao mb-1"><span>Dulzor</span><span>75%</span></div>
+                  <div class="h-2 bg-creamWarm rounded-full overflow-hidden"><div class="h-full bg-camote rounded-full" style="width: 75%;"></div></div>
+                </div>
+                <div>
+                  <div class="flex justify-between font-bold text-cacao mb-1"><span>Saciedad</span><span>100%</span></div>
+                  <div class="h-2 bg-creamWarm rounded-full overflow-hidden"><div class="h-full bg-andean rounded-full" style="width: 100%;"></div></div>
+                </div>
+              </div>
+
+              <!-- Macros por Barra de 120 g -->
+              <div class="grid grid-cols-4 gap-2 text-center">
+                <div class="p-2.5 rounded-xl bg-creamWarm">
+                  <span class="text-sm font-extrabold text-cacao block">480</span>
+                  <span class="text-[11px] text-cacaoSoft">kcal</span>
+                </div>
+                <div class="p-2.5 rounded-xl bg-creamWarm">
+                  <span class="text-sm font-extrabold text-cacao block">13.2 g</span>
+                  <span class="text-[11px] text-cacaoSoft">Proteína</span>
+                </div>
+                <div class="p-2.5 rounded-xl bg-creamWarm">
+                  <span class="text-sm font-extrabold text-cacao block">12.4 g</span>
+                  <span class="text-[11px] text-cacaoSoft">Fibra</span>
+                </div>
+                <div class="p-2.5 rounded-xl bg-andeanLight/70">
+                  <span class="text-sm font-extrabold text-andeanDark block">&lt; 10 g</span>
+                  <span class="text-[11px] text-andeanDark">Azúcar/100g</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botón Agregar al Carrito -->
+          <div class="px-6 sm:px-8 pb-6 sm:pb-8">
+            <button type="button" onclick="addToCart('unit-camote')" class="w-full py-4 px-6 rounded-2xl bg-camote hover:bg-cacao text-white font-bold text-base transition flex items-center justify-center gap-2 shadow-warm-md cursor-pointer">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M12 4v16m8-8H4" />
+              </svg>
+              <span>Agregar al carrito (S/ 7.50)</span>
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <!-- BANNER INTERACTIVO: ¡TÚ ELIGES EL 3.ER SABOR! -->
+      <div class="bg-gradient-to-r from-cacao via-[#351D13] to-cacao text-cream rounded-[2rem] p-6 sm:p-10 shadow-warm-lg relative overflow-hidden">
+        <div class="absolute right-0 top-0 w-72 h-72 bg-quinoa/15 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+          <div class="lg:col-span-5 space-y-3">
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-quinoa text-white text-xs font-extrabold uppercase tracking-wider">
+              Votación en Vivo · Comunidad Campus
+            </span>
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight">¡Tú eliges el 3.er sabor de Granue!</h3>
+            <p class="text-sm sm:text-base text-cream/80 leading-relaxed">
+              Nuestro próximo lanzamiento nace directamente de los estudiantes de Lima. Vota por tu combinación andina favorita y desbloquea un cupón de bienvenida.
+            </p>
+            <p id="poll-status-text" class="text-xs text-quinoaLight font-semibold pt-1">
+              ✨ 318 estudiantes ya votaron esta semana. ¡Haz clic para sumar tu voto!
+            </p>
+          </div>
+
+          <div id="third-flavor-poll" class="lg:col-span-7 space-y-3">
+            <!-- Opciones generadas dinámicamente por JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 4. EXPLORADOR VISUAL DE INGREDIENTES PERUANOS (120 g DE PURA ENERGÍA) -->
+  <!-- ===================================================================== -->
+  <section id="ingredientes" class="py-16 md:py-24 bg-creamWarm/70 border-t border-creamBorder dot-texture">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <div class="max-w-3xl">
+        <span class="text-xs font-extrabold uppercase tracking-widest text-quinoaDark">Transparencia Total · 120 g Reales</span>
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-cacao mt-2">¿Qué hay dentro de cada barra Granue?</h2>
+        <p class="text-base sm:text-lg text-cacaoSoft mt-3">
+          Nada de rellenos vacíos ni jarabes artificiales. Selecciona cualquiera de los <strong class="text-cacao">8 ingredientes reales</strong> para descubrir su gramaje exacto, su origen peruano y cómo potencia tu mente y cuerpo en clase.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <!-- Diagrama Interactivo de Corte Transversal de la Barra (5 cols) -->
+        <div class="lg:col-span-5 bg-white rounded-[2rem] p-6 sm:p-8 border border-creamBorder shadow-warm-md space-y-5">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-extrabold uppercase text-cacaoSoft">Anatomía de 120 g</span>
+            <span id="ing-gram-pill" class="px-3 py-1 rounded-full bg-quinoaLight text-quinoaDark text-xs font-extrabold">28 g (23.3%)</span>
+          </div>
+
+          <!-- Ilustración SVG interactiva con capas iluminables -->
+          <div class="bg-cream rounded-2xl p-4 border border-creamBorder flex items-center justify-center">
+            <svg id="bar-cutaway-svg" viewBox="0 0 360 220" class="w-full h-auto max-h-[220px]">
+              <defs>
+                <linearGradient id="barBodyGrad" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#8B5A2B" />
+                  <stop offset="50%" stop-color="#6B4226" />
+                  <stop offset="100%" stop-color="#4A2C18" />
+                </linearGradient>
+                <linearGradient id="barTopGrad" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stop-color="#D99B52" />
+                  <stop offset="100%" stop-color="#B87333" />
+                </linearGradient>
+              </defs>
+              <!-- Sombra -->
+              <ellipse cx="180" cy="195" rx="145" ry="14" fill="rgba(36,19,12,0.14)" />
+              <!-- Base 3D de la barra -->
+              <polygon points="35,95 150,45 325,85 210,145" fill="url(#barTopGrad)" stroke="#3D2212" stroke-width="2" />
+              <polygon points="35,95 210,145 210,185 35,135" fill="url(#barBodyGrad)" stroke="#3D2212" stroke-width="2" />
+              <polygon points="210,145 325,85 325,125 210,185" fill="#3D2212" stroke="#24130C" stroke-width="2" />
+
+              <!-- Capas y partículas por ingrediente (se iluminan al seleccionar) -->
+              <!-- 1. Avena en hojuelas -->
+              <g id="svg-ing-avena" class="transition-opacity duration-300">
+                <ellipse cx="95" cy="95" rx="14" ry="7" transform="rotate(-15 95 95)" fill="#F5DEB3" stroke="#C89D54" stroke-width="1.5" />
+                <ellipse cx="155" cy="82" rx="15" ry="7" transform="rotate(10 155 82)" fill="#F5DEB3" stroke="#C89D54" stroke-width="1.5" />
+                <ellipse cx="220" cy="96" rx="14" ry="7" transform="rotate(-8 220 96)" fill="#F5DEB3" stroke="#C89D54" stroke-width="1.5" />
+                <ellipse cx="135" cy="145" rx="12" ry="6" transform="rotate(20 135 145)" fill="#F5DEB3" />
+              </g>
+              <!-- 2. Maní tostado -->
+              <g id="svg-ing-mani" class="transition-opacity duration-300">
+                <ellipse cx="125" cy="108" rx="12" ry="8" fill="#D28E46" stroke="#8C5319" stroke-width="1.5" />
+                <ellipse cx="195" cy="115" rx="13" ry="8" fill="#D28E46" stroke="#8C5319" stroke-width="1.5" />
+                <ellipse cx="255" cy="102" rx="11" ry="7" fill="#D28E46" stroke="#8C5319" stroke-width="1.5" />
+                <ellipse cx="82" cy="132" rx="10" ry="7" fill="#D28E46" />
+              </g>
+              <!-- 3. Quinua y kiwicha expandidas -->
+              <g id="svg-ing-quinua" class="transition-opacity duration-300">
+                <circle cx="145" cy="68" r="4.5" fill="#FFF8DC" stroke="#E07A16" stroke-width="1.2" />
+                <circle cx="154" cy="72" r="4" fill="#FFF8DC" stroke="#E07A16" stroke-width="1.2" />
+                <circle cx="182" cy="78" r="4.5" fill="#FFF8DC" stroke="#E07A16" stroke-width="1.2" />
+                <circle cx="238" cy="84" r="4.5" fill="#FFF8DC" stroke="#E07A16" stroke-width="1.2" />
+                <circle cx="247" cy="88" r="4" fill="#FFF8DC" stroke="#E07A16" stroke-width="1.2" />
+                <circle cx="170" cy="155" r="4.5" fill="#FFF8DC" stroke="#E07A16" stroke-width="1.2" />
+              </g>
+              <!-- 4. Puré de camote -->
+              <g id="svg-ing-camote" class="transition-opacity duration-300">
+                <rect x="108" y="76" width="14" height="10" rx="3" fill="#E86A33" stroke="#A63A14" stroke-width="1.2" />
+                <rect x="206" y="88" width="15" height="10" rx="3" fill="#E86A33" stroke="#A63A14" stroke-width="1.2" />
+                <rect x="112" y="138" width="14" height="11" rx="3" fill="#E86A33" />
+              </g>
+              <!-- 5. Harina de lenteja -->
+              <g id="svg-ing-lenteja" class="transition-opacity duration-300">
+                <path d="M55 122 L195 162" stroke="#C5A869" stroke-width="6" stroke-linecap="round" opacity="0.85" />
+              </g>
+              <!-- 6. Semillas de chía -->
+              <g id="svg-ing-chia" class="transition-opacity duration-300">
+                <circle cx="118" cy="92" r="2.5" fill="#1F2937" />
+                <circle cx="168" cy="96" r="2.5" fill="#1F2937" />
+                <circle cx="212" cy="106" r="2.5" fill="#1F2937" />
+                <circle cx="268" cy="92" r="2.5" fill="#1F2937" />
+                <circle cx="152" cy="148" r="2.5" fill="#1F2937" />
+              </g>
+              <!-- 7. Cacao en polvo -->
+              <g id="svg-ing-cacao" class="transition-opacity duration-300">
+                <path d="M75 88 Q140 62 210 92 T295 86" fill="none" stroke="#24130C" stroke-width="5.5" stroke-linecap="round" />
+                <path d="M90 105 Q155 88 225 112" fill="none" stroke="#24130C" stroke-width="4.5" stroke-linecap="round" />
+              </g>
+              <!-- 8. Canela, sal y stevia -->
+              <g id="svg-ing-especias" class="transition-opacity duration-300">
+                <circle cx="135" cy="84" r="2" fill="#B45309" />
+                <circle cx="188" cy="92" r="2" fill="#B45309" />
+                <circle cx="230" cy="99" r="2" fill="#B45309" />
+                <circle cx="160" cy="112" r="2" fill="#FFFFFF" />
+              </g>
+            </svg>
+          </div>
+
+          <!-- Tarjeta de Detalle del Ingrediente Activo -->
+          <div id="ingredient-detail-card" class="p-5 rounded-2xl bg-cacao text-cream space-y-2">
+            <div class="flex items-center justify-between">
+              <h3 id="ing-title" class="text-xl font-bold text-white">1. Avena en Hojuelas</h3>
+              <span id="ing-origin" class="px-2.5 py-0.5 rounded-full bg-quinoa text-white text-[11px] font-bold">Grano Integral</span>
+            </div>
+            <p id="ing-benefit" class="text-sm text-cream/85 leading-relaxed">
+              Carbohidratos complejos de absorción lenta que mantienen tu glucosa estable durante bloques de 3 horas de clase sin bajones de sueño.
+            </p>
+          </div>
+        </div>
+
+        <!-- Selector de los 8 Ingredientes (7 cols) -->
+        <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-3.5" id="ingredients-grid">
+          <!-- Renderizado dinámicamente por JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 5. SELLO "0 OCTÓGONOS" E INSPECTOR DE ETIQUETA NUTRICIONAL (LEY 30021)-->
+  <!-- ===================================================================== -->
+  <section id="octogonos" class="py-16 md:py-24 bg-white border-t border-creamBorder">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <!-- Columna Izquierda: Barras Comparativas Ley 30021 (7 cols) -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-andeanLight text-andeanDark text-xs font-extrabold uppercase tracking-wider">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+            Verificado en Laboratorio · Ley N.º 30021
+          </div>
+
+          <h2 class="text-3xl sm:text-5xl font-extrabold text-cacao leading-tight">
+            Cero Octógonos. <span class="text-andean">100% Transparencia</span> en Cada Lote.
+          </h2>
+
+          <p class="text-base text-cacaoSoft leading-relaxed">
+            Mientras los snacks de cafetín y galletas ultraprocesadas disparan tu azúcar y sodio, Granue formula cada lote por debajo de los parámetros técnicos de la <strong class="text-cacao">Ley de Alimentación Saludable (Ley N.º 30021)</strong> y cuenta con Registro Sanitario vigente de <strong class="text-cacao">Digesa</strong> antes de salir a venta.
+          </p>
+
+          <!-- 3 Barras Comparativas Visuales por 100 g -->
+          <div class="space-y-4 pt-2">
+            <!-- Azúcar -->
+            <div class="p-4 sm:p-5 rounded-2xl bg-cream border border-creamBorder space-y-2">
+              <div class="flex flex-wrap justify-between items-center gap-2">
+                <span class="font-bold text-cacao text-sm sm:text-base">Azúcares Totales (por 100 g)</span>
+                <span class="px-3 py-0.5 rounded-full bg-andean text-white text-xs font-extrabold">Granue: &lt; 10 g (Sin Octógono)</span>
+              </div>
+              <div class="relative w-full h-4 bg-creamWarm rounded-full overflow-hidden">
+                <div class="h-full bg-andean rounded-full" style="width: 68%;"></div>
+                <!-- Línea umbral legal -->
+                <div class="absolute top-0 bottom-0 w-0.5 bg-red-600" style="left: 82%;" title="Umbral Ley 30021: 10 g"></div>
+              </div>
+              <div class="flex justify-between text-xs text-cacaoSoft">
+                <span>Endulzado con puré de camote y stevia</span>
+                <span class="font-semibold text-red-700">Tope legal octógono: ≥ 10 g / 100 g</span>
+              </div>
+            </div>
+
+            <!-- Grasas Saturadas -->
+            <div class="p-4 sm:p-5 rounded-2xl bg-cream border border-creamBorder space-y-2">
+              <div class="flex flex-wrap justify-between items-center gap-2">
+                <span class="font-bold text-cacao text-sm sm:text-base">Grasas Saturadas (por 100 g)</span>
+                <span class="px-3 py-0.5 rounded-full bg-andean text-white text-xs font-extrabold">Granue: &lt; 4 g (Sin Octógono)</span>
+              </div>
+              <div class="relative w-full h-4 bg-creamWarm rounded-full overflow-hidden">
+                <div class="h-full bg-andean rounded-full" style="width: 56%;"></div>
+                <div class="absolute top-0 bottom-0 w-0.5 bg-red-600" style="left: 82%;"></div>
+              </div>
+              <div class="flex justify-between text-xs text-cacaoSoft">
+                <span>Grasas saludables de maní tostado y chía</span>
+                <span class="font-semibold text-red-700">Tope legal octógono: ≥ 4 g / 100 g</span>
+              </div>
+            </div>
+
+            <!-- Sodio -->
+            <div class="p-4 sm:p-5 rounded-2xl bg-cream border border-creamBorder space-y-2">
+              <div class="flex flex-wrap justify-between items-center gap-2">
+                <span class="font-bold text-cacao text-sm sm:text-base">Sodio (por 100 g)</span>
+                <span class="px-3 py-0.5 rounded-full bg-andean text-white text-xs font-extrabold">Granue: &lt; 400 mg (Sin Octógono)</span>
+              </div>
+              <div class="relative w-full h-4 bg-creamWarm rounded-full overflow-hidden">
+                <div class="h-full bg-andean rounded-full" style="width: 36%;"></div>
+                <div class="absolute top-0 bottom-0 w-0.5 bg-red-600" style="left: 82%;"></div>
+              </div>
+              <div class="flex justify-between text-xs text-cacaoSoft">
+                <span>Control de pesaje con tolerancia ±1 g por lote</span>
+                <span class="font-semibold text-red-700">Tope legal octógono: ≥ 400 mg / 100 g</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Inspector Interactivo del Reverso del Empaque (5 cols) -->
+        <div class="lg:col-span-5">
+          <div class="bg-creamWarm rounded-[2rem] p-5 sm:p-7 border border-creamBorder shadow-warm-lg space-y-4">
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-xs font-extrabold uppercase tracking-wider text-cacaoSoft">Reverso del Empaque Laminado</span>
+              <div class="inline-flex p-1 rounded-xl bg-white border border-creamBorder">
+                <button type="button" data-label-flavor="cacao" class="label-toggle-btn px-3 py-1 rounded-lg text-xs font-bold bg-cacao text-cream cursor-pointer">Cacao</button>
+                <button type="button" data-label-flavor="camote" class="label-toggle-btn px-3 py-1 rounded-lg text-xs font-bold text-cacaoSoft cursor-pointer">Camote</button>
+              </div>
+            </div>
+
+            <!-- Mockup Realista de Etiqueta Nutricional Peruana -->
+            <div class="bg-white rounded-2xl p-5 border-2 border-cacao shadow-sm text-xs space-y-3">
+              <div class="flex items-start justify-between border-b-2 border-cacao pb-2.5">
+                <div>
+                  <span class="font-display font-extrabold text-lg text-cacao block leading-none">GRANUE · <span id="lbl-flavor-name">Cacao con Maní</span></span>
+                  <span class="text-[11px] font-bold text-cacaoSoft">Peso Neto: 120 g (1 porción)</span>
+                </div>
+                <span class="px-2.5 py-1 rounded-lg bg-andean text-white font-extrabold text-[10px] tracking-wide">
+                  0 OCTÓGONOS
+                </span>
+              </div>
+
+              <!-- Tabla Nutricional -->
+              <div>
+                <div class="font-extrabold uppercase text-[11px] tracking-wider bg-cacao text-cream px-2.5 py-1 rounded-t-md flex justify-between">
+                  <span>Información Nutricional</span>
+                  <span>Por 100 g / Por 120 g</span>
+                </div>
+                <div class="divide-y divide-creamBorder border-x border-b border-creamBorder px-2.5">
+                  <div class="py-1.5 flex justify-between font-bold">
+                    <span>Energía</span>
+                    <span id="lbl-kcal">400 kcal / 480 kcal</span>
+                  </div>
+                  <div class="py-1.5 flex justify-between">
+                    <span>Proteínas</span>
+                    <span id="lbl-prot">12.1 g / 14.5 g</span>
+                  </div>
+                  <div class="py-1.5 flex justify-between">
+                    <span>Grasas totales / Saturadas</span>
+                    <span id="lbl-fat">14.2 g / &lt; 4.0 g (100g)</span>
+                  </div>
+                  <div class="py-1.5 flex justify-between">
+                    <span>Carbohidratos disponibles</span>
+                    <span id="lbl-carb">52.5 g / 63.0 g</span>
+                  </div>
+                  <div class="py-1.5 flex justify-between text-andeanDark font-bold">
+                    <span>Azúcares totales (por 100 g)</span>
+                    <span id="lbl-sugar">7.8 g (&lt; 10 g tope)</span>
+                  </div>
+                  <div class="py-1.5 flex justify-between">
+                    <span>Fibra dietaria</span>
+                    <span id="lbl-fiber">9.3 g / 11.2 g</span>
+                  </div>
+                  <div class="py-1.5 flex justify-between text-andeanDark font-bold">
+                    <span>Sodio (por 100 g)</span>
+                    <span id="lbl-sodium">145 mg (&lt; 400 mg tope)</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Ingredientes y Alérgenos -->
+              <div class="space-y-1.5 text-[11px] leading-snug text-cacaoSoft">
+                <p><strong class="text-cacao">Ingredientes:</strong> <span id="lbl-ingredients">Avena en hojuelas, maní tostado, quinua y kiwicha expandidas, puré de camote, harina de lenteja, semillas de chía, cacao peruano en polvo, canela, sal y stevia (glucósidos de esteviol).</span></p>
+                <p class="p-2 rounded-lg bg-quinoaLight/60 text-cacao"><strong class="text-quinoaDark">Alérgenos:</strong> Contiene maní y avena (gluten). Elaborado en obrador con BPM y plan HACCP.</p>
+              </div>
+
+              <!-- Pie Legal Obligatorio -->
+              <div class="pt-2 border-t border-creamBorder flex flex-wrap items-center justify-between gap-2 text-[10px] font-bold text-cacao">
+                <span class="px-2 py-0.5 rounded bg-creamWarm border border-creamBorder">«Opción alternativa a una comida»</span>
+                <span class="text-cacaoSoft">R.S. Digesa · Lote #GR-2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 6. PLANES, PACKS, PROMO PARCIALES Y CALCULADORA DE AHORRO             -->
+  <!-- ===================================================================== -->
+  <section id="packs" class="py-16 md:py-24 bg-cream border-t border-creamBorder">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
+      <!-- Encabezado -->
+      <div class="text-center max-w-3xl mx-auto space-y-3">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-cacao text-cream text-xs font-extrabold uppercase tracking-wider">
+          Precios Finales con IGV Incluido
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-cacao">Elige el Pack Ideal para tu Horario Universitario</h2>
+        <p class="text-base sm:text-lg text-cacaoSoft">
+          Ahorra hasta un <strong class="text-andean">21% por barra</strong> suscribiéndote al mes y olvídate de hacer colas largas o gastar S/ 12–20 en menús entre clases.
+        </p>
+      </div>
+
+      <!-- 3 Planes Regulares -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-7 items-stretch">
+        <!-- Plan 1: Barra Unitaria -->
+        <div class="bg-white rounded-[2rem] p-6 sm:p-8 border border-creamBorder shadow-warm-md flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex justify-between items-center">
+              <span class="px-3 py-1 rounded-full bg-creamWarm text-cacao text-xs font-bold">Al Paso</span>
+              <span class="text-xs font-semibold text-cacaoSoft">1 barra · 120 g</span>
+            </div>
+            <h3 class="text-2xl font-extrabold text-cacao">Barra Unitaria</h3>
+            <div class="flex items-baseline gap-2">
+              <span class="text-4xl font-display font-extrabold text-cacao">S/ 7.50</span>
+              <span class="text-xs text-cacaoSoft">con IGV</span>
+            </div>
+            <p class="text-sm text-cacaoSoft">Para salir del apuro entre clases, antes de entrar al laboratorio o camino a casa.</p>
+            <ul class="space-y-2 text-xs sm:text-sm text-cacao pt-2 border-t border-creamBorder">
+              <li class="flex items-center gap-2"><span class="text-andean font-bold">✓</span> 480 kcal y 0 octógonos</li>
+              <li class="flex items-center gap-2"><span class="text-andean font-bold">✓</span> Suma 1 sello en tu tarjeta Club Granue</li>
+              <li class="flex items-center gap-2"><span class="text-andean font-bold">✓</span> Disponible en módulo, cafetín o WhatsApp</li>
+            </ul>
+          </div>
+
+          <div class="pt-6 space-y-2.5">
+            <select id="select-flavor-unit" aria-label="Elegir sabor barra unitaria" class="w-full px-3.5 py-2.5 rounded-xl bg-cream border border-creamBorder text-xs font-bold text-cacao">
+              <option value="unit-cacao">Sabor: Cacao con Maní</option>
+              <option value="unit-camote">Sabor: Canela con Camote</option>
+            </select>
+            <button type="button" onclick="addSelectedUnit()" class="w-full py-3.5 px-5 rounded-xl bg-creamWarm hover:bg-cacao hover:text-cream text-cacao font-bold text-sm transition cursor-pointer">
+              + Agregar Unitaria (S/ 7.50)
+            </button>
+          </div>
+        </div>
+
+        <!-- Plan 2: Pack Semanal (MÁS POPULAR) -->
+        <div class="bg-cacao text-cream rounded-[2rem] p-6 sm:p-8 border-2 border-quinoa shadow-warm-lg flex flex-col justify-between relative md:-translate-y-2">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-quinoa text-white text-xs font-extrabold uppercase tracking-wider shadow">
+            ★ Más Popular en Campus
+          </div>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex justify-between items-center">
+              <span class="px-3 py-1 rounded-full bg-white/10 text-quinoaLight text-xs font-bold">Lunes a Viernes</span>
+              <span class="px-2.5 py-0.5 rounded-full bg-andean text-white text-xs font-extrabold">Ahorra 15%</span>
+            </div>
+            <h3 class="text-2xl font-extrabold text-white">Pack Semanal (5 barras)</h3>
+            <div class="flex items-baseline gap-2">
+              <span class="text-4xl font-display font-extrabold text-white">S/ 32.00</span>
+              <span class="text-sm font-bold text-quinoaLight">(S/ 6.40 c/u)</span>
+            </div>
+            <p class="text-sm text-cream/80">Lunes a viernes cubiertos en tu mochila. Ahorras S/ 5.50 frente a comprarlas sueltas.</p>
+            <ul class="space-y-2 text-xs sm:text-sm text-cream/90 pt-2 border-t border-white/15">
+              <li class="flex items-center gap-2"><span class="text-quinoa font-bold">✓</span> 5 barras de 120 g (600 g totales)</li>
+              <li class="flex items-center gap-2"><span class="text-quinoa font-bold">✓</span> Combina sabores a tu gusto</li>
+              <li class="flex items-center gap-2"><span class="text-quinoa font-bold">✓</span> Entrega coordinada en facultad o módulo</li>
+            </ul>
+          </div>
+
+          <div class="pt-6 space-y-2.5">
+            <select id="select-flavor-pack" aria-label="Elegir sabores pack semanal" class="w-full px-3.5 py-2.5 rounded-xl bg-white/10 border border-white/20 text-xs font-bold text-white">
+              <option value="Mixto (3 Cacao + 2 Camote)" class="text-cacao">Mixto (3 Cacao + 2 Camote)</option>
+              <option value="Full Cacao con Maní (5 u.)" class="text-cacao">Full Cacao con Maní (5 u.)</option>
+              <option value="Full Canela con Camote (5 u.)" class="text-cacao">Full Canela con Camote (5 u.)</option>
+            </select>
+            <button type="button" onclick="addPackToCart('pack5', 'Pack Semanal (5 barras)', 32.00, 'select-flavor-pack')" class="w-full py-4 px-5 rounded-xl bg-quinoa hover:bg-quinoaDark text-white font-bold text-sm transition shadow-glow-quinoa cursor-pointer">
+              + Armar Pack Semanal (S/ 32.00)
+            </button>
+          </div>
+        </div>
+
+        <!-- Plan 3: Suscripción Mensual -->
+        <div class="bg-white rounded-[2rem] p-6 sm:p-8 border border-creamBorder shadow-warm-md flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex justify-between items-center">
+              <span class="px-3 py-1 rounded-full bg-andeanLight text-andeanDark text-xs font-extrabold">Máximo Ahorro</span>
+              <span class="px-2.5 py-0.5 rounded-full bg-andean text-white text-xs font-extrabold">Ahorra 21%</span>
+            </div>
+            <h3 class="text-2xl font-extrabold text-cacao">Suscripción Mensual (20 u.)</h3>
+            <div class="flex items-baseline gap-2">
+              <span class="text-4xl font-display font-extrabold text-cacao">S/ 118.00</span>
+              <span class="text-sm font-bold text-andean">(S/ 5.90 c/u)</span>
+            </div>
+            <p class="text-sm text-cacaoSoft">Todo el mes listo con entrega prioritaria en facultad y reposición semanal fresca.</p>
+            <ul class="space-y-2 text-xs sm:text-sm text-cacao pt-2 border-t border-creamBorder">
+              <li class="flex items-center gap-2"><span class="text-andean font-bold">✓</span> 20 barras de 120 g (ahorras S/ 32.00/mes)</li>
+              <li class="flex items-center gap-2"><span class="text-andean font-bold">✓</span> Entrega semanal de 5 barras frescas en campus</li>
+              <li class="flex items-center gap-2"><span class="text-andean font-bold">✓</span> Acceso anticipado a nuevos sabores</li>
+            </ul>
+          </div>
+
+          <div class="pt-6 space-y-2.5">
+            <select id="select-flavor-sub" aria-label="Elegir sabores suscripción mensual" class="w-full px-3.5 py-2.5 rounded-xl bg-cream border border-creamBorder text-xs font-bold text-cacao">
+              <option value="Mixto (10 Cacao + 10 Camote)">Mixto (10 Cacao + 10 Camote)</option>
+              <option value="Full Cacao con Maní (20 u.)">Full Cacao con Maní (20 u.)</option>
+              <option value="Full Canela con Camote (20 u.)">Full Canela con Camote (20 u.)</option>
+            </select>
+            <button type="button" onclick="addPackToCart('sub20', 'Suscripción Mensual (20 barras)', 118.00, 'select-flavor-sub')" class="w-full py-3.5 px-5 rounded-xl bg-andean hover:bg-andeanDark text-white font-bold text-sm transition cursor-pointer">
+              + Suscribirme al Mes (S/ 118.00)
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- DESTACADO ESPECIAL: PROMOCIÓN TEMPORAL "PACK PARCIALES" -->
+      <div class="bg-gradient-to-r from-camoteLight via-quinoaLight/70 to-creamWarm rounded-[2rem] p-6 sm:p-8 border-2 border-dashed border-quinoa flex flex-col lg:flex-row items-center justify-between gap-6">
+        <div class="space-y-2 max-w-2xl">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="px-3 py-1 rounded-full bg-camote text-white text-xs font-extrabold uppercase tracking-wider">
+              🔥 Promoción Temporal · Semana de Exámenes
+            </span>
+            <span class="text-xs font-bold text-cacaoSoft">Stock: 100 combos por campus</span>
+          </div>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-cacao">Pack Parciales: 6 Barras (120 g) + 1 Mini-Muestra (30 g)</h3>
+          <p class="text-sm text-cacaoSoft leading-relaxed">
+            Pensado para tus amanecidas de estudio y maratones de exámenes. Incluye 3 barras de Cacao con Maní + 3 barras de Canela con Camote + 1 mini-barra de 30 g de cortesía.
+          </p>
+          <p class="text-[11px] text-cacaoSoft">
+            *Condiciones transparentes (Ley N.º 29571 / D. Leg. N.º 1044): Promoción válida durante semanas de evaluaciones parciales y finales del ciclo lectivo vigente o hasta agotar stock promocional. Precio final incluye IGV.
+          </p>
+        </div>
+
+        <div class="shrink-0 bg-white p-5 rounded-2xl border border-creamBorder shadow-sm text-center space-y-3 w-full sm:w-auto min-w-[230px]">
+          <div>
+            <span class="text-xs text-cacaoSoft line-through block">Valor regular: S/ 45.00</span>
+            <span class="text-3xl font-display font-extrabold text-camote">S/ 38.00</span>
+            <span class="text-[11px] font-bold text-andean block">S/ 6.33/barra + 30 g gratis</span>
+          </div>
+          <button type="button" onclick="addPackToCart('promo-parciales', 'Pack Parciales (6 barras + 30g gratis)', 38.00, null)" class="w-full py-3 px-5 rounded-xl bg-camote hover:bg-cacao text-white font-bold text-sm transition cursor-pointer">
+            + Aprovechar Pack Parciales
+          </button>
+        </div>
+      </div>
+
+      <!-- CALCULADORA INTERACTIVA DE AHORRO UNIVERSITARIO -->
+      <div class="bg-white rounded-[2rem] p-6 sm:p-10 border border-creamBorder shadow-warm-lg space-y-8">
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 border-b border-creamBorder pb-6">
+          <div>
+            <span class="text-xs font-extrabold uppercase tracking-wider text-andean">Calculadora Realista de Presupuesto Estudiantil</span>
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-cacao mt-1">¿Cuánto Ahorras en tu Universidad?</h3>
+            <p class="text-sm text-cacaoSoft mt-1">Selecciona tu perfil de campus en Lima y cuántas veces por semana necesitas comer rápido entre clases.</p>
+          </div>
+          <span class="px-3.5 py-1.5 rounded-xl bg-creamWarm text-xs font-bold text-cacao">Basado en precios reales de campus en Lima</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <!-- Controles (6 cols) -->
+          <div class="lg:col-span-6 space-y-6">
+            <div class="space-y-2.5">
+              <label class="text-xs font-extrabold uppercase tracking-wider text-cacaoSoft block">1. Elige tu perfil de universidad:</label>
+              <div class="grid grid-cols-1 gap-2.5" id="campus-selector">
+                <button type="button" data-campus="urp" class="campus-calc-btn text-left p-4 rounded-2xl border-2 border-cacao bg-cream transition cursor-pointer">
+                  <div class="flex justify-between items-center">
+                    <span class="font-bold text-cacao text-sm">Privada Ingresos Medios (Ej. URP)</span>
+                    <span class="px-2.5 py-0.5 rounded-full bg-quinoaLight text-quinoaDark text-xs font-bold">Menú ~S/ 9.00</span>
+                  </div>
+                  <span class="text-xs text-cacaoSoft block mt-1">Ahorro directo ~17% con barra unitaria y hasta 34% con suscripción.</span>
+                </button>
+
+                <button type="button" data-campus="ulima" class="campus-calc-btn text-left p-4 rounded-2xl border-2 border-creamBorder bg-white hover:border-quinoa transition cursor-pointer">
+                  <div class="flex justify-between items-center">
+                    <span class="font-bold text-cacao text-sm">Privada Ingresos Altos (Ej. U. de Lima)</span>
+                    <span class="px-2.5 py-0.5 rounded-full bg-andeanLight text-andeanDark text-xs font-bold">Menú S/ 18–24</span>
+                  </div>
+                  <span class="text-xs text-cacaoSoft block mt-1">Ahorro masivo de 58% a 69% frente al menú diario del campus.</span>
+                </button>
+
+                <button type="button" data-campus="unmsm" class="campus-calc-btn text-left p-4 rounded-2xl border-2 border-creamBorder bg-white hover:border-quinoa transition cursor-pointer">
+                  <div class="flex justify-between items-center">
+                    <span class="font-bold text-cacao text-sm">Universidad Pública (Ej. UNMSM)</span>
+                    <span class="px-2.5 py-0.5 rounded-full bg-creamWarm text-cacao text-xs font-bold">Comedor S/ 0 · Snack S/ 10</span>
+                  </div>
+                  <span class="text-xs text-cacaoSoft block mt-1">Tu salvavidas cuando no alcanzas ticket de comedor o sales tarde de laboratorio.</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <div class="flex justify-between text-xs font-bold">
+                <span class="uppercase tracking-wider text-cacaoSoft">2. Días a la semana con poco tiempo entre clases:</span>
+                <span id="calc-days-label" class="text-quinoaDark text-sm font-extrabold">3 días / semana</span>
+              </div>
+              <input id="calc-days-slider" type="range" min="1" max="5" value="3" class="w-full accent-quinoa h-2 bg-creamWarm rounded-lg cursor-pointer" />
+              <div class="flex justify-between text-[11px] text-cacaoSoft">
+                <span>1 día</span>
+                <span>2 días</span>
+                <span>3 días</span>
+                <span>4 días</span>
+                <span>5 días (L–V)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Resultados Visuales (6 cols) -->
+          <div class="lg:col-span-6 bg-gradient-to-br from-cacao to-[#3B2116] text-cream rounded-3xl p-6 sm:p-8 space-y-6">
+            <div>
+              <span id="calc-campus-badge" class="px-3 py-1 rounded-full bg-quinoa text-white text-xs font-bold">Perfil: Privada Ingresos Medios (URP)</span>
+              <h4 id="calc-headline" class="text-2xl sm:text-3xl font-extrabold text-white mt-3">
+                Ahorras S/ 31.20 al mes y 4.5 horas de colas
+              </h4>
+              <p id="calc-subtext" class="text-xs sm:text-sm text-cream/80 mt-1.5 leading-relaxed">
+                Comparando el Pack Semanal Granue (S/ 6.40/barra) frente al menú promedio de S/ 9.00 en campus (12 ocasiones al mes).
+              </p>
+            </div>
+
+            <div class="grid grid-cols-3 gap-3 pt-2">
+              <div class="p-3.5 rounded-2xl bg-white/10 border border-white/15">
+                <span class="text-[11px] text-cream/70 block">Ahorro Mensual</span>
+                <span id="calc-money-saved" class="text-xl sm:text-2xl font-display font-extrabold text-quinoaLight">S/ 31.20</span>
+              </div>
+              <div class="p-3.5 rounded-2xl bg-white/10 border border-white/15">
+                <span class="text-[11px] text-cream/70 block">% Ahorro</span>
+                <span id="calc-pct-saved" class="text-xl sm:text-2xl font-display font-extrabold text-andeanLight">29%</span>
+              </div>
+              <div class="p-3.5 rounded-2xl bg-white/10 border border-white/15">
+                <span class="text-[11px] text-cream/70 block">Tiempo Ganado</span>
+                <span id="calc-time-saved" class="text-xl sm:text-2xl font-display font-extrabold text-white">4.5 hrs</span>
+              </div>
+            </div>
+
+            <div class="pt-2 border-t border-white/15 flex flex-wrap items-center justify-between gap-3">
+              <span class="text-xs text-cream/75">¿Listo para optimizar tu ciclo?</span>
+              <button type="button" onclick="addPackToCart('pack5', 'Pack Semanal (5 barras)', 32.00, 'select-flavor-pack')" class="px-4 py-2.5 rounded-xl bg-quinoa hover:bg-quinoaDark text-white font-bold text-xs transition cursor-pointer">
+                Pedir Pack Semanal ahora →
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 7. PROGRAMA DE FIDELIZACIÓN Y COMUNIDAD CAMPUS                        -->
+  <!-- ===================================================================== -->
+  <section id="comunidad" class="py-16 md:py-24 bg-white border-t border-creamBorder">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
+      <div class="text-center max-w-3xl mx-auto space-y-3">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-quinoaLight text-quinoaDark text-xs font-extrabold uppercase tracking-wider">
+          Beneficios Exclusivos Universitarios
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-cacao">Club Granue, Muestras Gratis y Embajadores</h2>
+        <p class="text-base text-cacaoSoft">
+          Queremos que pruebes Granue antes de decidir y premiar tu fidelidad durante todo el semestre académico.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        <!-- TARJETA DIGITAL INTERACTIVA: CLUB GRANUE (10.A BARRA GRATIS) (6 cols) -->
+        <div class="lg:col-span-6 bg-gradient-to-br from-cacao via-[#311A10] to-[#4A2818] text-cream rounded-[2rem] p-6 sm:p-8 shadow-warm-lg flex flex-col justify-between space-y-6">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full bg-quinoa text-white text-xs font-extrabold uppercase">Tarjeta Digital Interactiva</span>
+              <span id="stamp-counter-badge" class="text-xs font-bold text-quinoaLight">6 / 9 sellos</span>
+            </div>
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-white">Club Granue: Tu 10.ª barra es GRATIS</h3>
+            <p class="text-xs sm:text-sm text-cream/80">
+              Por cada barra unitaria que compres en módulo o WhatsApp acumulas un sello. ¡Haz clic en las casillas vacías para simular cómo desbloqueas tu barra gratis!
+            </p>
+          </div>
+
+          <!-- Grid de 10 Sellos Interactivos -->
+          <div id="loyalty-stamps-grid" class="grid grid-cols-5 gap-2.5 sm:gap-3">
+            <!-- Renderizado dinámico por JS -->
+          </div>
+
+          <!-- Estado y Acción de Recompensa -->
+          <div id="loyalty-reward-box" class="p-4 rounded-2xl bg-white/10 border border-white/15 flex flex-wrap items-center justify-between gap-3">
+            <div class="text-xs">
+              <strong id="loyalty-msg-title" class="text-white block text-sm">¡Te faltan solo 3 sellos!</strong>
+              <span id="loyalty-msg-sub" class="text-cream/75">Toca las casillas 7, 8 y 9 para probar el desbloqueo.</span>
+            </div>
+            <button id="claim-free-bar-btn" type="button" disabled class="px-4 py-2.5 rounded-xl bg-white/15 text-cream/50 font-bold text-xs transition cursor-not-allowed">
+              Canjear Barra Gratis
+            </button>
+          </div>
+        </div>
+
+        <!-- FORMULARIO MUESTRA GRATIS (30 g) + EMBAJADORES ESTUDIANTILES (6 cols) -->
+        <div class="lg:col-span-6 flex flex-col gap-6 justify-between">
+          <!-- Caja 1: Solicitar Mini-Muestra de 30 g -->
+          <div class="bg-cream rounded-[2rem] p-6 sm:p-8 border border-creamBorder shadow-warm-md space-y-4">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <span class="px-3 py-1 rounded-full bg-andeanLight text-andeanDark text-xs font-extrabold uppercase">Prueba Antes de Decidir</span>
+              <span class="text-xs font-bold text-cacaoSoft">250 mini-muestras (30 g) / mes</span>
+            </div>
+            <h3 class="text-2xl font-extrabold text-cacao">Pide tu Mini-Muestra Gratis (30 g)</h3>
+            <p class="text-xs sm:text-sm text-cacaoSoft">
+              Regístrate y recógela sin compromiso en nuestro módulo de campus o cafetín aliado durante los recesos.
+            </p>
+
+            <form id="sample-request-form" class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+              <input type="text" id="sample-name" required placeholder="Tu nombre y apellido" class="px-4 py-3 rounded-xl bg-white border border-creamBorder text-sm text-cacao focus:outline-none focus:border-quinoa" />
+              <select id="sample-campus" required class="px-4 py-3 rounded-xl bg-white border border-creamBorder text-sm text-cacao focus:outline-none focus:border-quinoa">
+                <option value="">Selecciona tu campus...</option>
+                <option value="URP / Surco">URP / Campus Surco</option>
+                <option value="U. de Lima">Universidad de Lima</option>
+                <option value="UNMSM">UNMSM (Ciudad Universitaria)</option>
+                <option value="Otro campus Lima">Otro campus en Lima</option>
+              </select>
+              <select id="sample-flavor" class="px-4 py-3 rounded-xl bg-white border border-creamBorder text-sm text-cacao focus:outline-none focus:border-quinoa">
+                <option value="Cacao con Maní">Probar: Cacao con Maní</option>
+                <option value="Canela con Camote">Probar: Canela con Camote</option>
+              </select>
+              <button type="submit" class="py-3 px-5 rounded-xl bg-quinoa hover:bg-quinoaDark text-white font-bold text-sm transition shadow-sm cursor-pointer">
+                Reservar Muestra Gratis
+              </button>
+            </form>
+
+            <!-- Confirmación inline de muestra -->
+            <div id="sample-confirmation" class="hidden p-3.5 rounded-xl bg-andeanLight text-andeanDark text-xs font-semibold flex items-center justify-between gap-2">
+              <span id="sample-conf-text"></span>
+              <span id="sample-code" class="px-2.5 py-1 rounded bg-andean text-white font-mono font-bold"></span>
+            </div>
+          </div>
+
+          <!-- Caja 2: Convocatoria Embajadores Estudiantiles -->
+          <div class="bg-creamWarm rounded-[2rem] p-6 border border-creamBorder flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div class="space-y-1">
+              <span class="text-xs font-extrabold uppercase tracking-wider text-quinoaDark">Programa Campus · 7 Cupos</span>
+              <h4 class="text-lg font-extrabold text-cacao">Sé Embajador Estudiantil Granue</h4>
+              <p class="text-xs text-cacaoSoft leading-relaxed">
+                Recibe <strong class="text-cacao">5 barras de 120 g gratis cada mes</strong> + acceso a eventos por representar a Granue en tu facultad y compartir contenido auténtico.
+              </p>
+            </div>
+            <button type="button" id="open-ambassador-modal" class="shrink-0 px-5 py-3 rounded-xl bg-cacao hover:bg-quinoaDark text-cream font-bold text-xs sm:text-sm transition cursor-pointer">
+              Postular Ahora
+            </button>
+          </div>
+
+          <!-- Caja 3: Boletín de Promociones y Parciales (Ley N.º 29733) -->
+          <div class="bg-white rounded-[2rem] p-6 border border-creamBorder shadow-sm space-y-3">
+            <div>
+              <span class="text-xs font-extrabold uppercase tracking-wider text-andean">Alertas de Parciales y Nuevos Sabores</span>
+              <h4 class="text-lg font-extrabold text-cacao">Únete al Boletín Universitario Granue</h4>
+            </div>
+            <form id="newsletter-form" class="space-y-2.5">
+              <div class="flex flex-col sm:flex-row gap-2">
+                <input type="email" id="newsletter-email" required placeholder="tu.correo@universidad.edu.pe" class="flex-1 px-4 py-2.5 rounded-xl bg-cream border border-creamBorder text-sm text-cacao focus:outline-none focus:border-quinoa" />
+                <button type="submit" class="px-5 py-2.5 rounded-xl bg-andean hover:bg-andeanDark text-white font-bold text-xs sm:text-sm transition cursor-pointer">
+                  Suscribirme
+                </button>
+              </div>
+              <label class="flex items-start gap-2 text-[11px] text-cacaoSoft cursor-pointer">
+                <input type="checkbox" required class="mt-0.5 accent-andean rounded" />
+                <span>Otorgo mi consentimiento expreso para recibir promociones y novedades de Granue S.A.C. conforme a la Ley N.º 29733 de Protección de Datos Personales.</span>
+              </label>
+            </form>
+            <div id="newsletter-success" class="hidden p-2.5 rounded-xl bg-andeanLight text-andeanDark text-xs font-bold">
+              ¡Suscripción confirmada! Te avisaremos cuando lancemos el Pack Parciales y el 3.er sabor.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 8. DÓNDE ENCONTRARNOS Y PUNTOS DE VENTA EN LIMA                       -->
+  <!-- ===================================================================== -->
+  <section id="ubicacion" class="py-16 md:py-24 bg-creamWarm/60 border-t border-creamBorder">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <div class="text-center max-w-3xl mx-auto space-y-3">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-white border border-creamBorder text-cacao text-xs font-extrabold uppercase tracking-wider">
+          Siempre Cerca de Tu Facultad
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-cacao">Dónde Encontrar Granue en Lima</h2>
+        <p class="text-base text-cacaoSoft">
+          Tres canales pensados para que consigas tu barra en menos de 2 minutos y pagues sin efectivo con Yape o Plin.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
+        <!-- Canal 1: Cafetines y Quioscos -->
+        <div class="bg-white rounded-[2rem] p-7 border border-creamBorder shadow-warm-md space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-quinoaLight text-quinoaDark flex items-center justify-center">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+            </svg>
+          </div>
+          <span class="text-xs font-extrabold uppercase text-quinoaDark block">Canal 01 · Disponibilidad Total</span>
+          <h3 class="text-xl font-extrabold text-cacao">Cafetines y Quioscos en Campus</h3>
+          <p class="text-sm text-cacaoSoft leading-relaxed">
+            Encuéntranos en los exhibidores principales de cafetines y quioscos universitarios con reposición fresca cada semana (lunes, miércoles y viernes).
+          </p>
+          <div class="pt-2 text-xs font-semibold text-cacao flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-andean"></span>
+            <span>Precio exhibido al público: S/ 7.50</span>
+          </div>
+        </div>
+
+        <!-- Canal 2: Módulo Granue -->
+        <div class="bg-white rounded-[2rem] p-7 border border-creamBorder shadow-warm-md space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-andeanLight text-andeanDark flex items-center justify-center">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </div>
+          <span class="text-xs font-extrabold uppercase text-andeanDark block">Canal 02 · Experiencia Directa</span>
+          <h3 class="text-xl font-extrabold text-cacao">Módulo Granue en Recesos y Exámenes</h3>
+          <p class="text-sm text-cacaoSoft leading-relaxed">
+            Visítanos en los patios centrales durante los cambios de hora y semanas de parciales/finales. Entrega de mini-muestras de 30 g y sellado de tarjeta Club Granue.
+          </p>
+          <div class="pt-2 text-xs font-semibold text-cacao flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-quinoa"></span>
+            <span>Horario punta: 10:00 a.m. – 4:00 p.m.</span>
+          </div>
+        </div>
+
+        <!-- Canal 3: WhatsApp e Instagram con Yape/Plin -->
+        <div class="bg-white rounded-[2rem] p-7 border border-creamBorder shadow-warm-md space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-yape/10 text-yape flex items-center justify-center">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <span class="text-xs font-extrabold uppercase text-yape block">Canal 03 · Cero Colas</span>
+          <h3 class="text-xl font-extrabold text-cacao">WhatsApp e Instagram + Yape / Plin</h3>
+          <p class="text-sm text-cacaoSoft leading-relaxed">
+            Pide tus packs semanales o suscripción mensual por <strong class="text-cacao">@granue.pe</strong>, paga al toque con Yape o Plin y recoge sin cola en módulo o recíbelo en tu facultad.
+          </p>
+          <div class="pt-2 flex items-center gap-2">
+            <span class="px-2.5 py-0.5 rounded bg-yape text-white text-[11px] font-bold">Yape</span>
+            <span class="px-2.5 py-0.5 rounded bg-plin text-white text-[11px] font-bold">Plin</span>
+            <button type="button" onclick="openCartDrawer()" class="ml-auto text-xs font-extrabold text-quinoaDark hover:underline cursor-pointer">
+              Simular pedido ahora →
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 9. CARRITO DE COMPRAS DESLIZABLE Y SIMULADOR YAPE / PLIN / WHATSAPP   -->
+  <!-- ===================================================================== -->
+  <div id="cart-backdrop" class="fixed inset-0 bg-cacao/60 backdrop-blur-xs z-50 hidden transition-opacity"></div>
+
+  <aside id="cart-drawer" aria-label="Carrito de compras Granue" class="fixed top-0 right-0 bottom-0 w-full max-w-md bg-cream z-50 shadow-2xl border-l border-creamBorder transform translate-x-full transition-transform duration-300 flex flex-col">
+    <!-- Cabecera Drawer -->
+    <div class="p-5 bg-white border-b border-creamBorder flex items-center justify-between">
+      <div class="flex items-center gap-2.5">
+        <span class="w-9 h-9 rounded-xl bg-cacao text-cream flex items-center justify-center font-display font-bold">G</span>
+        <div>
+          <h3 class="font-display font-extrabold text-lg text-cacao leading-none">Tu Pedido Granue</h3>
+          <span class="text-[11px] text-cacaoSoft">Precios finales con IGV · Pago Yape/Plin</span>
+        </div>
+      </div>
+      <button id="close-cart-btn" type="button" aria-label="Cerrar carrito" class="p-2 rounded-xl hover:bg-creamWarm text-cacao cursor-pointer">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Cuerpo Scrollable del Carrito -->
+    <div class="flex-1 overflow-y-auto p-5 space-y-5">
+      <!-- Lista de Items -->
+      <div id="cart-items-list" class="space-y-3">
+        <!-- Renderizado dinámico por JS -->
+      </div>
+
+      <!-- Opciones de Entrega en Campus -->
+      <div class="p-4 rounded-2xl bg-white border border-creamBorder space-y-3">
+        <span class="text-xs font-extrabold uppercase tracking-wider text-cacaoSoft block">Modalidad de Entrega en Lima</span>
+        <div class="grid grid-cols-2 gap-2">
+          <button type="button" data-delivery="Recojo en Módulo Campus" class="delivery-opt-btn p-2.5 rounded-xl border-2 border-cacao bg-cream text-xs font-bold text-cacao cursor-pointer">
+            Recojo en Módulo
+          </button>
+          <button type="button" data-delivery="Entrega en Facultad" class="delivery-opt-btn p-2.5 rounded-xl border-2 border-creamBorder bg-white text-xs font-bold text-cacaoSoft cursor-pointer">
+            Entrega en Facultad
+          </button>
+        </div>
+        <select id="cart-campus-select" class="w-full px-3 py-2.5 rounded-xl bg-cream border border-creamBorder text-xs font-bold text-cacao">
+          <option value="URP / Campus Surco">Campus: URP / Surco</option>
+          <option value="Universidad de Lima">Campus: Universidad de Lima</option>
+          <option value="UNMSM (Ciudad Universitaria)">Campus: UNMSM (Ciudad Universitaria)</option>
+        </select>
+      </div>
+
+      <!-- Panel Simulador Yape / Plin QR (Oculto hasta pulsar Pagar) -->
+      <div id="yape-qr-panel" class="hidden p-5 rounded-2xl bg-white border-2 border-yape space-y-3 text-center">
+        <div class="flex items-center justify-center gap-2">
+          <span class="px-3 py-0.5 rounded-full bg-yape text-white text-xs font-extrabold">Yape</span>
+          <span class="px-3 py-0.5 rounded-full bg-plin text-white text-xs font-extrabold">Plin</span>
+        </div>
+        <p class="text-xs font-bold text-cacao">Escanea el QR simulado para completar tu pedido:</p>
+        <!-- QR SVG Generado -->
+        <div class="w-36 h-36 mx-auto p-2.5 rounded-2xl bg-cream border border-creamBorder flex items-center justify-center">
+          <svg viewBox="0 0 100 100" class="w-full h-full fill-cacao">
+            <rect x="10" y="10" width="25" height="25" rx="3" fill="none" stroke="#24130C" stroke-width="5"/>
+            <rect x="17" y="17" width="11" height="11" />
+            <rect x="65" y="10" width="25" height="25" rx="3" fill="none" stroke="#24130C" stroke-width="5"/>
+            <rect x="72" y="17" width="11" height="11" />
+            <rect x="10" y="65" width="25" height="25" rx="3" fill="none" stroke="#24130C" stroke-width="5"/>
+            <rect x="17" y="72" width="11" height="11" />
+            <rect x="44" y="14" width="6" height="14" />
+            <rect x="44" y="42" width="12" height="12" fill="#742284" />
+            <rect x="14" y="44" width="16" height="6" />
+            <rect x="66" y="44" width="20" height="6" />
+            <rect x="46" y="66" width="8" height="22" />
+            <rect x="64" y="68" width="22" height="8" />
+            <rect x="72" y="82" width="14" height="8" />
+          </svg>
+        </div>
+        <p id="qr-amount-text" class="text-lg font-display font-extrabold text-yape">Monto: S/ 39.50</p>
+        <button type="button" id="confirm-yape-btn" class="w-full py-2.5 px-4 rounded-xl bg-andean hover:bg-andeanDark text-white font-bold text-xs transition cursor-pointer">
+          ✓ Confirmar Pago Simulado
+        </button>
+        <div id="yape-success-msg" class="hidden p-2.5 rounded-xl bg-andeanLight text-andeanDark text-xs font-bold">
+          ¡Pago confirmado! Tu código de recojo es #GR-842.
+        </div>
+      </div>
+    </div>
+
+    <!-- Pie Drawer: Totales y Botones Checkout -->
+    <div class="p-5 bg-white border-t border-creamBorder space-y-3">
+      <div class="flex items-center justify-between">
+        <span class="text-sm font-semibold text-cacaoSoft">Total (IGV 18% incluido):</span>
+        <span id="cart-total-amount" class="text-2xl font-display font-extrabold text-cacao">S/ 39.50</span>
+      </div>
+
+      <div class="grid grid-cols-1 gap-2.5">
+        <button type="button" id="toggle-yape-btn" class="w-full py-3.5 px-4 rounded-xl bg-yape hover:opacity-95 text-white font-bold text-sm transition flex items-center justify-center gap-2 cursor-pointer">
+          <span>Pagar al toque con Yape / Plin</span>
+        </button>
+        <button type="button" id="copy-whatsapp-btn" class="w-full py-3 px-4 rounded-xl bg-andean hover:bg-andeanDark text-white font-bold text-sm transition flex items-center justify-center gap-2 cursor-pointer">
+          <span>Copiar Pedido para WhatsApp</span>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL POSTULACIÓN EMBAJADORES ESTUDIANTILES                           -->
+  <!-- ===================================================================== -->
+  <div id="ambassador-modal" class="fixed inset-0 bg-cacao/60 backdrop-blur-xs z-50 hidden items-center justify-center p-4">
+    <div class="bg-cream rounded-3xl max-w-md w-full p-6 sm:p-8 border border-creamBorder shadow-2xl space-y-4 relative">
+      <button type="button" id="close-ambassador-modal" aria-label="Cerrar modal" class="absolute top-4 right-4 p-2 rounded-xl hover:bg-creamWarm text-cacao cursor-pointer">
+        ✕
+      </button>
+      <span class="px-3 py-1 rounded-full bg-quinoaLight text-quinoaDark text-xs font-extrabold uppercase">Comunidad Granue</span>
+      <h3 class="text-2xl font-extrabold text-cacao">Postula como Embajador/a</h3>
+      <p class="text-xs sm:text-sm text-cacaoSoft">
+        Buscamos 7 estudiantes activos en campus de Lima para recibir 5 barras mensuales gratis y compartir nuestra propuesta saludable.
+      </p>
+      <form id="ambassador-form" class="space-y-3">
+        <input type="text" required placeholder="Nombre completo" class="w-full px-4 py-3 rounded-xl bg-white border border-creamBorder text-sm" />
+        <input type="text" required placeholder="Universidad y Facultad" class="w-full px-4 py-3 rounded-xl bg-white border border-creamBorder text-sm" />
+        <input type="text" required placeholder="Usuario Instagram / TikTok (@tuusuario)" class="w-full px-4 py-3 rounded-xl bg-white border border-creamBorder text-sm" />
+        <button type="submit" class="w-full py-3.5 rounded-xl bg-cacao hover:bg-quinoaDark text-cream font-bold text-sm transition cursor-pointer">
+          Enviar Postulación
+        </button>
+      </form>
+      <div id="ambassador-success" class="hidden p-3.5 rounded-xl bg-andeanLight text-andeanDark text-xs font-bold text-center">
+        ¡Postulación registrada! Nuestro equipo comercial te contactará por Instagram/WhatsApp.
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL LIBRO DE RECLAMACIONES VIRTUAL (LEY N.º 29571)                  -->
+  <!-- ===================================================================== -->
+  <div id="complaints-modal" class="fixed inset-0 bg-cacao/60 backdrop-blur-xs z-50 hidden items-center justify-center p-4">
+    <div class="bg-cream rounded-3xl max-w-md w-full p-6 sm:p-8 border border-creamBorder shadow-2xl space-y-4 relative">
+      <button type="button" id="close-complaints-modal" aria-label="Cerrar libro de reclamaciones" class="absolute top-4 right-4 p-2 rounded-xl hover:bg-creamWarm text-cacao cursor-pointer">
+        ✕
+      </button>
+      <div class="flex items-center gap-2">
+        <span class="px-3 py-1 rounded-full bg-cacao text-cream text-xs font-extrabold uppercase">Atención al Consumidor</span>
+      </div>
+      <h3 class="text-2xl font-extrabold text-cacao">Libro de Reclamaciones Virtual</h3>
+      <p class="text-xs text-cacaoSoft leading-relaxed">
+        GRANUE S.A.C. · Conforme al Código de Protección y Defensa del Consumidor (Ley N.º 29571). Registra tu queja o reclamo sobre producto o atención en campus.
+      </p>
+      <form id="complaints-form" class="space-y-3">
+        <input type="text" required placeholder="Nombre completo del consumidor" class="w-full px-4 py-2.5 rounded-xl bg-white border border-creamBorder text-sm" />
+        <input type="text" required placeholder="DNI / CE y correo electrónico" class="w-full px-4 py-2.5 rounded-xl bg-white border border-creamBorder text-sm" />
+        <select required class="w-full px-4 py-2.5 rounded-xl bg-white border border-creamBorder text-sm text-cacao">
+          <option value="Reclamo">Tipo: Reclamo (disconformidad con el producto)</option>
+          <option value="Queja">Tipo: Queja (malestar respecto a la atención)</option>
+        </select>
+        <textarea rows="3" required placeholder="Detalle del reclamo o queja (indica lote o campus si aplica)" class="w-full px-4 py-2.5 rounded-xl bg-white border border-creamBorder text-sm"></textarea>
+        <button type="submit" class="w-full py-3 rounded-xl bg-cacao hover:bg-quinoaDark text-cream font-bold text-sm transition cursor-pointer">
+          Registrar Hoja de Reclamación
+        </button>
+      </form>
+      <div id="complaints-success" class="hidden p-3.5 rounded-xl bg-andeanLight text-andeanDark text-xs font-bold text-center">
+        Hoja de Reclamación registrada con código #LR-2026-014. Recibirás respuesta en un plazo máximo de 15 días hábiles.
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Flotante para Notificaciones (Sin alert()) -->
+  <div id="toast-notification" class="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 px-5 py-3 rounded-2xl bg-cacao text-cream text-xs sm:text-sm font-bold shadow-2xl border border-white/15 opacity-0 pointer-events-none transition-all duration-300 flex items-center gap-2">
+    <span class="w-2.5 h-2.5 rounded-full bg-andean"></span>
+    <span id="toast-message">Producto agregado al carrito</span>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- 10. FOOTER 100% COMERCIAL Y DE MARCA GRANUE S.A.C.                    -->
+  <!-- ===================================================================== -->
+  <footer class="bg-cacao text-cream pt-16 pb-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-10 border-b border-white/15">
+        <!-- Marca y Propuesta de Valor -->
+        <div class="md:col-span-5 space-y-4">
+          <div class="flex items-center gap-2.5">
+            <div class="w-10 h-10 rounded-xl bg-quinoa text-white flex items-center justify-center font-display font-extrabold text-xl">G</div>
+            <div>
+              <span class="font-display font-extrabold text-2xl text-white block leading-none">GRANUE</span>
+              <span class="text-[11px] uppercase tracking-widest text-quinoaLight font-bold">Come bien, aunque no tengas tiempo</span>
+            </div>
+          </div>
+          <p class="text-sm text-cream/80 leading-relaxed">
+            Barras nutritivas peruanas de 120 g (480 kcal) elaboradas con quinua, kiwicha, cacao, maní y camote. Libres de octógonos de advertencia (Ley N.º 30021).
+          </p>
+          <div class="inline-block px-3.5 py-2 rounded-xl bg-white/10 border border-white/15 text-xs font-semibold text-quinoaLight">
+            Leyenda legal: «Opción alternativa a una comida»
+          </div>
+        </div>
+
+        <!-- Enlaces Comerciales -->
+        <div class="md:col-span-3 space-y-3">
+          <h4 class="font-bold text-white uppercase text-xs tracking-wider">Explora Granue</h4>
+          <ul class="space-y-2 text-sm text-cream/75">
+            <li><a href="#sabores" class="hover:text-quinoaLight transition">Sabores de Lanzamiento</a></li>
+            <li><a href="#ingredientes" class="hover:text-quinoaLight transition">Ingredientes Peruanos</a></li>
+            <li><a href="#octogonos" class="hover:text-quinoaLight transition">Sello 0 Octógonos</a></li>
+            <li><a href="#packs" class="hover:text-quinoaLight transition">Packs y Calculadora</a></li>
+            <li><a href="#comunidad" class="hover:text-quinoaLight transition">Club Granue y Muestras</a></li>
+          </ul>
+        </div>
+
+        <!-- Canales, Medios de Pago y Atención al Consumidor -->
+        <div class="md:col-span-4 space-y-3">
+          <h4 class="font-bold text-white uppercase text-xs tracking-wider">Pedidos y Medios de Pago</h4>
+          <p class="text-sm text-cream/75">Síguenos y haz tu pedido directo en campus:</p>
+          <div class="flex flex-wrap gap-2 pt-1">
+            <span class="px-3 py-1.5 rounded-xl bg-white/10 text-xs font-bold text-white">Instagram @granue.pe</span>
+            <span class="px-3 py-1.5 rounded-xl bg-white/10 text-xs font-bold text-white">TikTok @granue.pe</span>
+            <span class="px-3 py-1.5 rounded-xl bg-andean text-white text-xs font-bold">WhatsApp Campus</span>
+          </div>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="text-xs text-cream/70">Aceptamos:</span>
+            <span class="px-2.5 py-0.5 rounded bg-yape text-white text-[11px] font-extrabold">Yape</span>
+            <span class="px-2.5 py-0.5 rounded bg-plin text-white text-[11px] font-extrabold">Plin</span>
+            <span class="px-2.5 py-0.5 rounded bg-white/15 text-cream text-[11px] font-bold">Efectivo en módulo</span>
+          </div>
+          <div class="pt-2">
+            <button type="button" id="open-complaints-modal" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white/10 hover:bg-white/20 border border-white/15 text-xs font-bold text-cream transition cursor-pointer">
+              <span>📖 Libro de Reclamaciones Virtual</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pie Legal Exclusivamente Comercial -->
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-cream/60">
+        <span>© 2026 GRANUE S.A.C. · Todos los derechos reservados · Precios finales incluyen IGV · Registro Sanitario Digesa.</span>
+        <div class="flex items-center gap-4">
+          <span>Ley N.º 29571 · Ley N.º 29733</span>
+          <a href="#inicio" class="text-cream/85 hover:text-quinoaLight font-semibold">Volver arriba ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================== -->
+  <!-- JAVASCRIPT DE INTERACTIVIDAD, ILUSTRACIONES SVG Y CARRITO D2C         -->
+  <!-- ===================================================================== -->
+  <script>
+    // =========================================================================
+    // 1. ARTE VECTORIAL EDITORIAL DE EMPAQUE + BARRA CORTADA (0 BROKEN IMAGES)
+    // =========================================================================
+    function buildProductVisualSVG(flavor, compact = false) {
+      const isCacao = flavor === 'cacao';
+      const pouchGradStart = isCacao ? '#2E1810' : '#A8381E';
+      const pouchGradEnd = isCacao ? '#180B06' : '#6E200F';
+      const accentColor = isCacao ? '#E07A16' : '#F59E0B';
+      const flavorTitle = isCacao ? 'CACAO CON MANÍ' : 'CANELA CON CAMOTE';
+      const barBase = isCacao ? '#4E2A18' : '#9A441E';
+      const barTop = isCacao ? '#7A4428' : '#D97236';
+
+      return `
+        <svg viewBox="0 0 420 310" class="w-full h-auto drop-shadow-xl select-none">
+          <defs>
+            <linearGradient id="pouch-${flavor}-${compact}" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="${pouchGradStart}" />
+              <stop offset="100%" stop-color="${pouchGradEnd}" />
+            </linearGradient>
+            <linearGradient id="foilSheen-${flavor}-${compact}" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="rgba(255,255,255,0.02)" />
+              <stop offset="45%" stop-color="rgba(255,255,255,0.14)" />
+              <stop offset="100%" stop-color="rgba(255,255,255,0.01)" />
+            </linearGradient>
+          </defs>
+
+          <!-- Sombra proyectada en mesa -->
+          <ellipse cx="215" cy="285" rx="170" ry="18" fill="rgba(36,19,12,0.22)" />
+
+          <!-- EMPAQUE INDIVIDUAL SELLADO MATE (Inclinado a la izquierda) -->
+          <g transform="translate(36, 22) rotate(-6)">
+            <!-- Cuerpo del empaque -->
+            <rect x="0" y="0" width="185" height="245" rx="16" fill="url(#pouch-${flavor}-${compact})" stroke="rgba(255,255,255,0.18)" stroke-width="1.5" />
+            <!-- Sellado superior e inferior -->
+            <rect x="0" y="0" width="185" height="16" rx="6" fill="rgba(0,0,0,0.35)" />
+            <rect x="0" y="229" width="185" height="16" rx="6" fill="rgba(0,0,0,0.35)" />
+            <!-- Brillo mate -->
+            <rect x="0" y="0" width="185" height="245" rx="16" fill="url(#foilSheen-${flavor}-${compact})" />
+
+            <!-- Sello Verde 0 OCTÓGONOS -->
+            <rect x="108" y="24" width="64" height="22" rx="6" fill="#1B7A43" />
+            <text x="140" y="38" text-anchor="middle" fill="#FFFFFF" font-family="Plus Jakarta Sans, sans-serif" font-size="7.5" font-weight="800">0 OCTÓGONOS</text>
+
+            <!-- Marca GRANUE -->
+            <text x="18" y="68" fill="#FBF8F3" font-family="Fraunces, Georgia, serif" font-size="27" font-weight="800" letter-spacing="0.5">GRANUE</text>
+            <rect x="18" y="76" width="54" height="3.5" rx="2" fill="${accentColor}" />
+
+            <!-- Sabor -->
+            <text x="18" y="98" fill="${accentColor}" font-family="Plus Jakarta Sans, sans-serif" font-size="10.5" font-weight="800" letter-spacing="0.8">${flavorTitle}</text>
+            <text x="18" y="113" fill="rgba(251,248,243,0.75)" font-family="Plus Jakarta Sans, sans-serif" font-size="8.5" font-weight="600">Quinua · Kiwicha · Avena · Chía</text>
+
+            <!-- Ventana ilustrativa de granos en empaque -->
+            <circle cx="92" cy="158" r="34" fill="rgba(255,255,255,0.08)" stroke="${accentColor}" stroke-width="1.5" stroke-dasharray="4 3" />
+            <text x="92" y="155" text-anchor="middle" fill="#FBF8F3" font-family="Fraunces, Georgia, serif" font-size="17" font-weight="800">120 g</text>
+            <text x="92" y="170" text-anchor="middle" fill="#FDE68A" font-family="Plus Jakarta Sans, sans-serif" font-size="9" font-weight="700">480 kcal</text>
+
+            <!-- Leyenda obligatoria -->
+            <text x="92" y="214" text-anchor="middle" fill="rgba(251,248,243,0.7)" font-family="Plus Jakarta Sans, sans-serif" font-size="7" font-weight="600">OPCIÓN ALTERNATIVA A UNA COMIDA</text>
+          </g>
+
+          <!-- BARRA CORTADA EN PRIMER PLANO (Derecha, mostrando textura apetitosa) -->
+          <g transform="translate(175, 118) rotate(5)">
+            <!-- Cuerpo 3D de la barra -->
+            <polygon points="10,48 115,12 215,44 110,85" fill="${barTop}" stroke="#24130C" stroke-width="2" />
+            <polygon points="10,48 110,85 110,126 10,88" fill="${barBase}" stroke="#24130C" stroke-width="2" />
+            <polygon points="110,85 215,44 215,85 110,126" fill="#2A150D" stroke="#24130C" stroke-width="2" />
+
+            <!-- Hojuelas de Avena Dorada -->
+            <ellipse cx="62" cy="48" rx="12" ry="6" transform="rotate(-14 62 48)" fill="#F5DEB3" stroke="#C89D54" stroke-width="1.2" />
+            <ellipse cx="118" cy="36" rx="13" ry="6" transform="rotate(10 118 36)" fill="#F5DEB3" stroke="#C89D54" stroke-width="1.2" />
+            <ellipse cx="162" cy="50" rx="11" ry="5.5" transform="rotate(-8 162 50)" fill="#F5DEB3" stroke="#C89D54" stroke-width="1.2" />
+            <ellipse cx="75" cy="92" rx="10" ry="5" fill="#F5DEB3" />
+
+            <!-- Perlas de Quinua y Kiwicha Expandidas -->
+            <circle cx="95" cy="28" r="4" fill="#FFFBEB" stroke="#E07A16" stroke-width="1" />
+            <circle cx="103" cy="31" r="3.5" fill="#FFFBEB" stroke="#E07A16" stroke-width="1" />
+            <circle cx="140" cy="40" r="4" fill="#FFFBEB" stroke="#E07A16" stroke-width="1" />
+            <circle cx="148" cy="43" r="3.5" fill="#FFFBEB" stroke="#E07A16" stroke-width="1" />
+            <circle cx="92" cy="102" r="4" fill="#FFFBEB" stroke="#E07A16" stroke-width="1" />
+
+            <!-- Trozos específicos del sabor -->
+            ${isCacao ? `
+              <!-- Maní tostado + vetas de cacao -->
+              <ellipse cx="88" cy="58" rx="11" ry="7" fill="#D99B52" stroke="#78350F" stroke-width="1.2" />
+              <ellipse cx="136" cy="60" rx="10" ry="6.5" fill="#D99B52" stroke="#78350F" stroke-width="1.2" />
+              <ellipse cx="46" cy="78" rx="9" ry="6" fill="#D99B52" />
+              <path d="M40 46 Q95 24 145 48 T195 45" fill="none" stroke="#1E0E08" stroke-width="5" stroke-linecap="round" />
+              <path d="M55 62 Q110 46 165 65" fill="none" stroke="#1E0E08" stroke-width="4" stroke-linecap="round" />
+            ` : `
+              <!-- Dados caramelizados de camote + canela -->
+              <rect x="78" y="48" width="14" height="10" rx="3" fill="#EA580C" stroke="#9A3412" stroke-width="1.2" />
+              <rect x="130" y="50" width="14" height="10" rx="3" fill="#EA580C" stroke="#9A3412" stroke-width="1.2" />
+              <rect x="44" y="72" width="13" height="10" rx="3" fill="#EA580C" />
+              <path d="M45 45 Q105 26 175 48" fill="none" stroke="#FDE68A" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="6 4" />
+            `}
+
+            <!-- Semillas de chía -->
+            <circle cx="72" cy="42" r="2.2" fill="#111827" />
+            <circle cx="115" cy="52" r="2.2" fill="#111827" />
+            <circle cx="155" cy="58" r="2.2" fill="#111827" />
+            <circle cx="62" cy="86" r="2.2" fill="#111827" />
+          </g>
+        </svg>
+      `;
+    }
+
+    // Inyectar ilustraciones en las tarjetas de sabores
+    document.getElementById('card-art-cacao').innerHTML = buildProductVisualSVG('cacao', true);
+    document.getElementById('card-art-camote').innerHTML = buildProductVisualSVG('camote', true);
+
+    // =========================================================================
+    // 2. INTERACTIVIDAD HERO (CAMBIO DE SABOR Y QUICK ADD)
+    // =========================================================================
+    let currentHeroFlavor = 'cacao';
+    const heroStage = document.getElementById('hero-visual-stage');
+    const heroTitle = document.getElementById('hero-flavor-title');
+    const heroFlavorBtns = document.querySelectorAll('.hero-flavor-btn');
+
+    function renderHeroStage(flavor) {
+      currentHeroFlavor = flavor;
+      heroStage.innerHTML = buildProductVisualSVG(flavor, false);
+      heroTitle.textContent = flavor === 'cacao'
+        ? 'Granue Cacao con Maní (120 g)'
+        : 'Granue Canela con Camote (120 g)';
+
+      heroFlavorBtns.forEach(btn => {
+        const isSelected = btn.getAttribute('data-hero-flavor') === flavor;
+        btn.className = isSelected
+          ? 'hero-flavor-btn px-3.5 py-1.5 rounded-lg text-xs font-bold bg-cacao text-cream transition cursor-pointer'
+          : 'hero-flavor-btn px-3.5 py-1.5 rounded-lg text-xs font-bold text-cacaoSoft hover:text-cacao transition cursor-pointer';
+      });
+    }
+    renderHeroStage('cacao');
+
+    heroFlavorBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        renderHeroStage(btn.getAttribute('data-hero-flavor'));
+      });
+    });
+
+    document.getElementById('hero-quick-add').addEventListener('click', () => {
+      addToCart(currentHeroFlavor === 'cacao' ? 'unit-cacao' : 'unit-camote');
+    });
+
+    // =========================================================================
+    // 3. EFECTO 3D TILT EN TARJETAS DE PRODUCTO
+    // =========================================================================
+    document.querySelectorAll('.tilt-card').forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        if (window.innerWidth < 768) return;
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const rotateX = ((y - centerY) / centerY) * -4;
+        const rotateY = ((x - centerX) / centerX) * 4;
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
+      });
+    });
+
+    // =========================================================================
+    // 4. VOTACIÓN EN VIVO POR EL 3.ER SABOR
+    // =========================================================================
+    const thirdFlavorPoll = {
+      votedId: null,
+      options: [
+        { id: 'lucuma', name: 'Lúcuma & Quinua Crocante', tag: 'Clásico Peruano', votes: 144 },
+        { id: 'cafe', name: 'Café de Chanchamayo & Maní', tag: 'Modo Amanecida', votes: 108 },
+        { id: 'maracuya', name: 'Maracuyá & Coco Andino', tag: 'Fresco & Cítrico', votes: 66 }
+      ]
+    };
+
+    const pollContainer = document.getElementById('third-flavor-poll');
+    const pollStatusText = document.getElementById('poll-status-text');
+
+    function renderThirdFlavorPoll() {
+      const total = thirdFlavorPoll.options.reduce((s, o) => s + o.votes, 0);
+      pollContainer.innerHTML = thirdFlavorPoll.options.map(opt => {
+        const pct = Math.round((opt.votes / total) * 100);
+        const active = thirdFlavorPoll.votedId === opt.id;
+        return `
+          <button type="button" data-poll-id="${opt.id}"
+            class="w-full text-left p-4 rounded-2xl border transition relative overflow-hidden cursor-pointer ${
+              active ? 'border-quinoa bg-white/15' : 'border-white/15 bg-white/5 hover:bg-white/10'
+            }">
+            <div class="absolute inset-y-0 left-0 bg-quinoa/30 transition-all duration-500" style="width: ${pct}%;"></div>
+            <div class="relative z-10 flex items-center justify-between gap-3">
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="font-bold text-white text-sm sm:text-base">${opt.name}</span>
+                  <span class="px-2 py-0.5 rounded bg-white/15 text-[10px] font-bold text-quinoaLight">${opt.tag}</span>
+                  ${active ? '<span class="px-2 py-0.5 rounded bg-quinoa text-white text-[10px] font-extrabold">TU VOTO</span>' : ''}
+                </div>
+                <span class="text-xs text-cream/70">${opt.votes} votos universitarios</span>
+              </div>
+              <span class="text-xl sm:text-2xl font-display font-extrabold text-quinoaLight">${pct}%</span>
+            </div>
+          </button>
+        `;
+      }).join('');
+
+      pollContainer.querySelectorAll('button[data-poll-id]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const id = btn.getAttribute('data-poll-id');
+          if (thirdFlavorPoll.votedId === id) return;
+          if (thirdFlavorPoll.votedId) {
+            const prev = thirdFlavorPoll.options.find(o => o.id === thirdFlavorPoll.votedId);
+            if (prev) prev.votes--;
+          }
+          const chosen = thirdFlavorPoll.options.find(o => o.id === id);
+          if (chosen) {
+            chosen.votes++;
+            thirdFlavorPoll.votedId = id;
+            pollStatusText.textContent = `🎉 ¡Voto registrado por "${chosen.name}"! Total: ${total + 1} estudiantes participando.`;
+            showToast(`Votaste por ${chosen.name}`);
+            renderThirdFlavorPoll();
+          }
+        });
+      });
+    }
+    renderThirdFlavorPoll();
+
+    // =========================================================================
+    // 5. EXPLORADOR INTERACTIVO DE LOS 8 INGREDIENTES (120 g)
+    // =========================================================================
+    const ingredientsData = [
+      { id: 'avena', num: 1, name: 'Avena en Hojuelas', grams: '28 g', pct: '23.3%', origin: 'Cereal Integral', benefit: 'Carbohidratos complejos de absorción lenta que mantienen tu energía y concentración durante bloques largos de clase sin picos de azúcar.' },
+      { id: 'mani', num: 2, name: 'Maní Tostado Crocante', grams: '26 g', pct: '21.7%', origin: 'Costa y Selva Peruana', benefit: 'Aporta proteínas vegetales, grasas monoinsaturadas saludables y una textura crocante que brinda saciedad inmediata.' },
+      { id: 'quinua', num: 3, name: 'Quinua y Kiwicha Expandidas', grams: '22 g', pct: '18.3%', origin: 'Altiplano Andino (Puno/Cusco)', benefit: 'Supergranos ancestrales con aminoácidos esenciales, hierro y magnesio para combatir la fatiga mental en época de exámenes.' },
+      { id: 'camote', num: 4, name: 'Puré de Camote Horneado', grams: '18 g', pct: '15.0%', origin: 'Valles Costeros de Lima', benefit: 'Aporta betacarotenos, fibra y dulzor natural caramelizado, permitiendo reducir azúcares añadidos y evitar octógonos.' },
+      { id: 'lenteja', num: 5, name: 'Harina de Lenteja', grams: '12 g', pct: '10.0%', origin: 'Leguminosa Andina', benefit: 'Refuerza el perfil proteico y de fibra dietaria de la barra sin alterar su delicioso sabor a cacao o canela.' },
+      { id: 'chia', num: 6, name: 'Semillas de Chía', grams: '6 g', pct: '5.0%', origin: 'Andes Peruanos', benefit: 'Fuente natural de ácidos grasos Omega-3 y fibra soluble que prolonga la sensación de llenura hasta tu próxima comida.' },
+      { id: 'cacao', num: 7, name: 'Cacao Peruano en Polvo', grams: '5 g', pct: '4.2%', origin: 'Amazonía Peruana', benefit: 'Rico en antioxidantes y teobromina natural que mejora el estado de ánimo y el enfoque cognitivo sin nerviosismo.' },
+      { id: 'especias', num: 8, name: 'Canela, Sal y Stevia', grams: '3 g', pct: '2.5%', origin: 'Aromáticos Naturales', benefit: 'Canela aromática, pizca de sal para realzar sabores y extracto natural de stevia (<10 g azúcar/100 g).' }
+    ];
+
+    let activeIngredientId = 'avena';
+    const ingredientsGrid = document.getElementById('ingredients-grid');
+
+    function renderIngredients() {
+      ingredientsGrid.innerHTML = ingredientsData.map(ing => {
+        const isActive = ing.id === activeIngredientId;
+        return `
+          <button type="button" data-ing-id="${ing.id}"
+            class="text-left p-4 rounded-2xl border-2 transition cursor-pointer flex items-center justify-between gap-3 ${
+              isActive
+                ? 'border-cacao bg-white shadow-warm-md'
+                : 'border-creamBorder bg-white/75 hover:bg-white hover:border-quinoa'
+            }">
+            <div>
+              <span class="text-[11px] font-extrabold uppercase text-quinoaDark block">0${ing.num} · ${ing.origin}</span>
+              <span class="font-bold text-cacao text-sm sm:text-base">${ing.name}</span>
+            </div>
+            <div class="text-right shrink-0">
+              <span class="px-2.5 py-1 rounded-xl ${isActive ? 'bg-cacao text-cream' : 'bg-creamWarm text-cacao'} font-display font-extrabold text-sm block">
+                ${ing.grams}
+              </span>
+              <span class="text-[10px] text-cacaoSoft">${ing.pct}</span>
+            </div>
+          </button>
+        `;
+      }).join('');
+
+      // Actualizar panel detalle y resaltar capa en SVG
+      const current = ingredientsData.find(i => i.id === activeIngredientId);
+      document.getElementById('ing-title').textContent = `${current.num}. ${current.name}`;
+      document.getElementById('ing-origin').textContent = current.origin;
+      document.getElementById('ing-benefit').textContent = current.benefit;
+      document.getElementById('ing-gram-pill').textContent = `${current.grams} (${current.pct} de 120 g)`;
+
+      ingredientsData.forEach(ing => {
+        const layer = document.getElementById(`svg-ing-${ing.id}`);
+        if (layer) {
+          layer.style.opacity = ing.id === activeIngredientId ? '1' : '0.28';
+        }
+      });
+
+      ingredientsGrid.querySelectorAll('button[data-ing-id]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          activeIngredientId = btn.getAttribute('data-ing-id');
+          renderIngredients();
+        });
+      });
+    }
+    renderIngredients();
+
+    // =========================================================================
+    // 6. INSPECTOR INTERACTIVO DEL REVERSO DEL EMPAQUE (0 OCTÓGONOS)
+    // =========================================================================
+    const labelToggleBtns = document.querySelectorAll('.label-toggle-btn');
+    const labelSpecs = {
+      cacao: {
+        name: 'Cacao con Maní',
+        kcal: '400 kcal / 480 kcal',
+        prot: '12.1 g / 14.5 g',
+        fat: '14.2 g / < 4.0 g (100g)',
+        carb: '52.5 g / 63.0 g',
+        sugar: '7.8 g (< 10 g tope)',
+        fiber: '9.3 g / 11.2 g',
+        sodium: '145 mg (< 400 mg tope)',
+        ingredients: 'Avena en hojuelas, maní tostado, quinua y kiwicha expandidas, puré de camote, harina de lenteja, semillas de chía, cacao peruano en polvo, sal y stevia (glucósidos de esteviol).'
+      },
+      camote: {
+        name: 'Canela con Camote',
+        kcal: '400 kcal / 480 kcal',
+        prot: '11.0 g / 13.2 g',
+        fat: '11.8 g / < 4.0 g (100g)',
+        carb: '56.2 g / 67.4 g',
+        sugar: '8.4 g (< 10 g tope)',
+        fiber: '10.3 g / 12.4 g',
+        sodium: '138 mg (< 400 mg tope)',
+        ingredients: 'Avena en hojuelas, puré de camote horneado, maní tostado, quinua y kiwicha expandidas, harina de lenteja, semillas de chía, canela en polvo, sal y stevia (glucósidos de esteviol).'
+      }
+    };
+
+    labelToggleBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const flv = btn.getAttribute('data-label-flavor');
+        const spec = labelSpecs[flv];
+        labelToggleBtns.forEach(b => {
+          const active = b.getAttribute('data-label-flavor') === flv;
+          b.className = active
+            ? 'label-toggle-btn px-3 py-1 rounded-lg text-xs font-bold bg-cacao text-cream cursor-pointer'
+            : 'label-toggle-btn px-3 py-1 rounded-lg text-xs font-bold text-cacaoSoft cursor-pointer';
+        });
+        document.getElementById('lbl-flavor-name').textContent = spec.name;
+        document.getElementById('lbl-kcal').textContent = spec.kcal;
+        document.getElementById('lbl-prot').textContent = spec.prot;
+        document.getElementById('lbl-fat').textContent = spec.fat;
+        document.getElementById('lbl-carb').textContent = spec.carb;
+        document.getElementById('lbl-sugar').textContent = spec.sugar;
+        document.getElementById('lbl-fiber').textContent = spec.fiber;
+        document.getElementById('lbl-sodium').textContent = spec.sodium;
+        document.getElementById('lbl-ingredients').textContent = spec.ingredients;
+      });
+    });
+
+    // =========================================================================
+    // 7. CALCULADORA DE AHORRO UNIVERSITARIO INTERACTIVA
+    // =========================================================================
+    let selectedCampusKey = 'urp';
+    const campusProfiles = {
+      urp: {
+        badge: 'Perfil: Privada Ingresos Medios (Ej. URP)',
+        menuPrice: 9.00,
+        granuePrice: 6.40,
+        minsSavedPerDay: 22,
+        note: 'Comparando el Pack Semanal Granue (S/ 6.40/barra) frente al menú promedio de S/ 9.00 en campus.'
+      },
+      ulima: {
+        badge: 'Perfil: Privada Ingresos Altos (Ej. U. de Lima)',
+        menuPrice: 20.00,
+        granuePrice: 6.40,
+        minsSavedPerDay: 28,
+        note: 'Comparando el Pack Semanal Granue (S/ 6.40/barra) frente al menú universitario promedio (S/ 18–24).'
+      },
+      unmsm: {
+        badge: 'Perfil: Pública (Ej. UNMSM · Sin ticket comedor / snack externo)',
+        menuPrice: 10.00,
+        granuePrice: 6.40,
+        minsSavedPerDay: 35,
+        note: 'Cuando no alcanzas ticket de comedor gratuito o sales tarde de laboratorio y necesitas comer rápido sin salir de ciudad universitaria.'
+      }
+    };
+
+    const daysSlider = document.getElementById('calc-days-slider');
+    const campusCalcBtns = document.querySelectorAll('.campus-calc-btn');
+
+    function updateSavingsCalculator() {
+      const days = Number(daysSlider.value);
+      const occasionsPerMonth = days * 4;
+      const prof = campusProfiles[selectedCampusKey];
+
+      const moneySaved = Math.max(0, (prof.menuPrice - prof.granuePrice) * occasionsPerMonth);
+      const pctSaved = Math.round(((prof.menuPrice - prof.granuePrice) / prof.menuPrice) * 100);
+      const hoursSaved = ((prof.minsSavedPerDay * occasionsPerMonth) / 60).toFixed(1);
+
+      document.getElementById('calc-days-label').textContent = `${days} ${days === 1 ? 'día' : 'días'} / semana`;
+      document.getElementById('calc-campus-badge').textContent = prof.badge;
+      document.getElementById('calc-headline').textContent = `Ahorras S/ ${moneySaved.toFixed(2)} al mes y ${hoursSaved} horas libres`;
+      document.getElementById('calc-subtext').textContent = `${prof.note} (${occasionsPerMonth} ocasiones al mes).`;
+      document.getElementById('calc-money-saved').textContent = `S/ ${moneySaved.toFixed(2)}`;
+      document.getElementById('calc-pct-saved').textContent = `${pctSaved}%`;
+      document.getElementById('calc-time-saved').textContent = `${hoursSaved} hrs`;
+    }
+
+    campusCalcBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        selectedCampusKey = btn.getAttribute('data-campus');
+        campusCalcBtns.forEach(b => {
+          const active = b.getAttribute('data-campus') === selectedCampusKey;
+          b.className = active
+            ? 'campus-calc-btn text-left p-4 rounded-2xl border-2 border-cacao bg-cream transition cursor-pointer'
+            : 'campus-calc-btn text-left p-4 rounded-2xl border-2 border-creamBorder bg-white hover:border-quinoa transition cursor-pointer';
+        });
+        updateSavingsCalculator();
+      });
+    });
+
+    daysSlider.addEventListener('input', updateSavingsCalculator);
+    updateSavingsCalculator();
+
+    // =========================================================================
+    // 8. TARJETA DIGITAL CLUB GRANUE (10.A BARRA GRATIS) + MUESTRAS GRATIS
+    // =========================================================================
+    const stampedSet = new Set([1, 2, 3, 4, 5, 6]);
+    const stampsGrid = document.getElementById('loyalty-stamps-grid');
+    const claimFreeBtn = document.getElementById('claim-free-bar-btn');
+
+    function renderLoyaltyCard() {
+      const count = stampedSet.size;
+      document.getElementById('stamp-counter-badge').textContent = `${count} / 9 sellos`;
+
+      let html = '';
+      for (let i = 1; i <= 9; i++) {
+        const punched = stampedSet.has(i);
+        html += `
+          <button type="button" data-stamp="${i}"
+            class="aspect-square rounded-2xl border-2 flex flex-col items-center justify-center transition cursor-pointer ${
+              punched
+                ? 'bg-quinoa border-quinoaLight text-white stamp-punched shadow-md'
+                : 'bg-white/5 border-dashed border-white/25 text-cream/50 hover:border-quinoa hover:text-white'
+            }">
+            <span class="text-xs font-extrabold">${punched ? '✓' : `#${i}`}</span>
+            <span class="text-[9px] uppercase tracking-tighter">${punched ? 'Sellado' : '120 g'}</span>
+          </button>
+        `;
+      }
+
+      const unlocked = count >= 9;
+      html += `
+        <div class="aspect-square rounded-2xl border-2 flex flex-col items-center justify-center text-center p-1 ${
+          unlocked
+            ? 'bg-andean border-andeanLight text-white shadow-lg animate-pulse'
+            : 'bg-white/10 border-white/20 text-quinoaLight'
+        }">
+          <span class="text-sm font-extrabold">🎁</span>
+          <span class="text-[9px] font-extrabold uppercase leading-tight">10.ª GRATIS</span>
+        </div>
+      `;
+      stampsGrid.innerHTML = html;
+
+      if (unlocked) {
+        document.getElementById('loyalty-msg-title').textContent = '🎉 ¡Felicidades! Desbloqueaste tu 10.ª barra GRATIS';
+        document.getElementById('loyalty-msg-sub').textContent = 'Agrégala ahora mismo a tu carrito por S/ 0.00.';
+        claimFreeBtn.disabled = false;
+        claimFreeBtn.className = 'px-4 py-2.5 rounded-xl bg-andean hover:bg-andeanDark text-white font-bold text-xs transition cursor-pointer shadow';
+      } else {
+        const rem = 9 - count;
+        document.getElementById('loyalty-msg-title').textContent = `¡Te faltan solo ${rem} ${rem === 1 ? 'sello' : 'sellos'}!`;
+        document.getElementById('loyalty-msg-sub').textContent = 'Toca las casillas vacías para simular tu tarjeta llena.';
+        claimFreeBtn.disabled = true;
+        claimFreeBtn.className = 'px-4 py-2.5 rounded-xl bg-white/15 text-cream/50 font-bold text-xs transition cursor-not-allowed';
+      }
+
+      stampsGrid.querySelectorAll('button[data-stamp]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const num = Number(btn.getAttribute('data-stamp'));
+          if (stampedSet.has(num)) {
+            stampedSet.delete(num);
+          } else {
+            stampedSet.add(num);
+          }
+          renderLoyaltyCard();
+        });
+      });
+    }
+    renderLoyaltyCard();
+
+    claimFreeBtn.addEventListener('click', () => {
+      if (stampedSet.size < 9) return;
+      addCustomCartItem({
+        id: 'club-free-bar',
+        name: 'Premio Club Granue (10.ª Barra Gratis)',
+        detail: '120 g · Sabor a elección en módulo',
+        price: 0.00,
+        qty: 1
+      });
+    });
+
+    // Formulario de Muestra Gratis (30 g)
+    document.getElementById('sample-request-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('sample-name').value.trim();
+      const campus = document.getElementById('sample-campus').value;
+      const flavor = document.getElementById('sample-flavor').value;
+      const randomCode = 'M30-' + Math.floor(100 + Math.random() * 899);
+
+      const confBox = document.getElementById('sample-confirmation');
+      document.getElementById('sample-conf-text').textContent = `¡Listo, ${name}! Tu muestra de ${flavor} te espera en ${campus}.`;
+      document.getElementById('sample-code').textContent = randomCode;
+      confBox.classList.remove('hidden');
+      showToast('Muestra gratis de 30 g reservada');
+    });
+
+    // Modal Embajadores
+    const ambModal = document.getElementById('ambassador-modal');
+    document.getElementById('open-ambassador-modal').addEventListener('click', () => {
+      ambModal.classList.remove('hidden');
+      ambModal.classList.add('flex');
+    });
+    document.getElementById('close-ambassador-modal').addEventListener('click', () => {
+      ambModal.classList.add('hidden');
+      ambModal.classList.remove('flex');
+    });
+    document.getElementById('ambassador-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      document.getElementById('ambassador-success').classList.remove('hidden');
+      showToast('Postulación de Embajador enviada');
+    });
+
+    // Formulario Boletín (Ley N.º 29733)
+    document.getElementById('newsletter-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      document.getElementById('newsletter-success').classList.remove('hidden');
+      document.getElementById('newsletter-email').value = '';
+      showToast('¡Suscrito al boletín Granue!');
+    });
+
+    // Modal Libro de Reclamaciones Virtual
+    const complaintsModal = document.getElementById('complaints-modal');
+    document.getElementById('open-complaints-modal').addEventListener('click', () => {
+      complaintsModal.classList.remove('hidden');
+      complaintsModal.classList.add('flex');
+    });
+    document.getElementById('close-complaints-modal').addEventListener('click', () => {
+      complaintsModal.classList.add('hidden');
+      complaintsModal.classList.remove('flex');
+    });
+    document.getElementById('complaints-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      document.getElementById('complaints-success').classList.remove('hidden');
+      showToast('Hoja de reclamación registrada');
+    });
+
+    // =========================================================================
+    // 9. CARRITO DE COMPRAS DESLIZABLE + SIMULADOR YAPE/PLIN & WHATSAPP
+// ... existing code ... -->
